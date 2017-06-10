@@ -61,7 +61,7 @@ bindsym $mod+Shift+q kill
 # installed.
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -b'
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='dmenu -i -b'
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -i -dmenu -font "snap 12" -bg "#222222" -fg "#888888" -hlbg "#285577" -hlfg "#ffffff" -opacity 90 -m 0 -location 0'
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -i -dmenu -font "snap 12" -bg "#222222" -fg "#888888" -hlbg "#285577" -hlfg "#ffffff" -opacity 90 -m 0 -location 0'
 
 #disable title bars
     for_window [class="^.*"] border pixel 0
@@ -223,8 +223,10 @@ bar {
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/Screenshots'
 
 # lock computer
-bindsym $mod+Control+Shift+l exec --no-startup-id i3lock -i /home/skinman95/.config/i3/mother_board_blue.png
-bindsym $mod+Control+Shift+s exec --no-startup-id i3lock -i /home/skinman95/.config/i3/mother_board_blue.png & systemctl suspend
+#bindsym $mod+Control+Shift+l exec --no-startup-id i3lock -i /home/skinman95/.config/i3/mother_board_blue.png
+bindsym $mod+Control+Shift+l exec --no-startup-id i3lock-fancy -f Raleway -- scrot -z
+#bindsym $mod+Control+Shift+s exec --no-startup-id i3lock -i /home/skinman95/.config/i3/mother_board_blue.png & systemctl suspend
+bindsym $mod+Control+Shift+s exec --no-startup-id i3lock-fancy -f Raleway -- scrot -z & systemctl suspend
 
 # poweroff computer
 bindsym $mod+Control+Shift+p exec --no-startup-id systemctl poweroff
