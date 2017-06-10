@@ -36,7 +36,7 @@ set $baseBorder #505250
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:Terminus 9
-font pango:System San Francisco Display, FontAwesome 10
+font xft:Inconsolata 12, FontAwesome 10
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -245,7 +245,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 # decrease 
 bindsym XF86Calculator exec --no-startup-id gnome-calculator
 
 # ranger
-bindsym $mod+t exec --no-startup-id urxvt -e ranger
+bindsym $mod+t exec --no-startup-id termite -e ranger
 
 # spotify
 bindsym $mod+i exec --no-startup-id ~/.config/i3/spotify-control.sh play
@@ -292,3 +292,4 @@ assign [class="qBittorrent"] $workspace8
 assign [class="Skype"] $workspace7
 
 for_window [class="URxvt"] border pixel 2
+for_window [class="Termite"] border pixel 2
