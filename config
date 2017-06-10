@@ -224,9 +224,9 @@ bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/Screenshots'
 
 # lock computer
 #bindsym $mod+Control+Shift+l exec --no-startup-id i3lock -i /home/skinman95/.config/i3/mother_board_blue.png
-bindsym $mod+Control+Shift+l exec --no-startup-id i3lock-fancy -f Raleway -- scrot -z
+bindsym $mod+Control+Shift+l exec --no-startup-id i3lock-fancy -f Inconsolata -- scrot -z
 #bindsym $mod+Control+Shift+s exec --no-startup-id i3lock -i /home/skinman95/.config/i3/mother_board_blue.png & systemctl suspend
-bindsym $mod+Control+Shift+s exec --no-startup-id i3lock-fancy -f Raleway -- scrot -z & systemctl suspend
+bindsym $mod+Control+Shift+s exec --no-startup-id i3lock-fancy -f Inconsolata -- scrot -z & systemctl suspend
 
 # poweroff computer
 bindsym $mod+Control+Shift+p exec --no-startup-id systemctl poweroff
