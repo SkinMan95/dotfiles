@@ -120,16 +120,16 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $workspace1 "1:1: "
-set $workspace2 "2:2: "
-set $workspace3 "3:3: "
+set $workspace1 "1: "
+set $workspace2 "2: "
+set $workspace3 "3: "
 set $workspace4 "4"
 set $workspace5 "5"
-set $workspace6 "6:6: "
-set $workspace7 "7:7: "
-set $workspace8 "8:8: "
-set $workspace9 "9:9: "
-set $workspace10 "10:10: "
+set $workspace6 "6: "
+set $workspace7 "7: "
+set $workspace8 "8: "
+set $workspace9 "9: "
+set $workspace10 "10: "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -205,7 +205,7 @@ bar {
 	position top
 	#font pango:Terminus 9
 	font pango:System San Francisco Display, FontAwesome 10
-        strip_workspace_numbers yes
+        strip_workspace_numbers no
         #bindsym button4 nop
         #bindsym button5 nop
         colors {
@@ -226,7 +226,7 @@ bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/Screenshots'
 #bindsym $mod+Control+Shift+l exec --no-startup-id i3lock -i /home/skinman95/.config/i3/mother_board_blue.png
 bindsym $mod+Control+Shift+l exec --no-startup-id i3lock-fancy -f Inconsolata -- scrot -z
 #bindsym $mod+Control+Shift+s exec --no-startup-id i3lock -i /home/skinman95/.config/i3/mother_board_blue.png & systemctl suspend
-bindsym $mod+Control+Shift+s exec --no-startup-id i3lock-fancy -f Inconsolata -- scrot -z & systemctl suspend
+bindsym $mod+Control+Shift+s exec --no-startup-id i3lock-fancy -f Inconsolata -- scrot -z && systemctl suspend
 
 # poweroff computer
 bindsym $mod+Control+Shift+p exec --no-startup-id systemctl poweroff
@@ -264,7 +264,7 @@ exec --no-startup-id skype
 exec --no-startup-id spotify
 #exec --no-startup-id spotify-adkiller.sh &
 #exec --no-startup-id volumeicon
-exec --no-startup-id blockify-ui --log=/home/skinman95/blockify.log
+#exec --no-startup-id blockify-ui --log=/home/skinman95/blockify.log
 exec --no-startup-id amixer sset Master 20%
 exec --no-startup-id alarm-clock-applet
 exec --no-startup-id qbittorrent
