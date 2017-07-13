@@ -1,0 +1,107 @@
+# Conky, a system monitor, based on torsmo
+# Any original torsmo code is licensed under the BSD license
+# All code written since the fork of torsmo is licensed under the GPL
+# Please see COPYING for details
+# Copyright (c) 2004, Hannu Saransaari and Lauri Hakkarainen
+# Copyright (c) 2005-2010 Brenden Matthews, Philip Kovacs, et. al. (see AUTHORS)
+# All rights reserved.
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+alignment top_right
+background no
+border_width 1
+cpu_avg_samples 2
+default_color ffffff
+default_outline_color white
+default_shade_color white
+color1 44bbff
+#color2 2299ff
+#color2 00ff00
+color2 ff0000
+color3 00ff00
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+use_xft yes
+xftfont DejaVu Sans Mono:size=12
+gap_x 50
+gap_y 50
+minimum_size 5 5
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+own_window yes
+own_window_class Conky
+own_window_type override
+own_window_argb_visual yes
+own_window_argb_value 128
+stippled_borders 0
+update_interval 1.0
+uppercase no
+use_spacer none
+show_graph_scale no
+show_graph_range no
+double_buffer yes
+
+TEXT
+${color2}kernel:     $color ${kernel} ${machine}
+${color2}uptime:     $color $uptime
+${color2}frequency:  $color $freq_g GHz
+${color2}acpi temp:  ${color} ${acpitemp}C
+${color2}battery:    ${color} ${battery_percent BAT1}% (${battery_time BAT1}) - ${exec ~/.config/i3/show-wattage.sh} watts
+${color2}ram usage:  $color $mem/$memmax - $memperc% ${membar 4}
+${color2}swap usage: $color $swap/$swapmax - $swapperc% ${swapbar 4}
+${color2}load:       $color ${loadavg 1}/${loadavg 2}/${loadavg 3}
+${color2}processes:  $color $processes  ${color2}running:$color $running_processes
+${color2}core 0:$color ${cpu cpu0}% ${cpubar cpu0}
+${color2}core 1:$color ${cpu cpu1}% ${cpubar cpu1}
+${color2}core 2:$color ${cpu cpu2}% ${cpubar cpu2}
+${color2}core 3:$color ${cpu cpu3}% ${cpubar cpu3}
+${color2}core 4:$color ${cpu cpu4}% ${cpubar cpu4}
+${color2}core 5:$color ${cpu cpu5}% ${cpubar cpu5}
+${color2}core 6:$color ${cpu cpu6}% ${cpubar cpu6}
+${color2}core 7:$color ${cpu cpu7}% ${cpubar cpu7}
+$hr
+${color2}file systems:
+ /        $color${fs_used /}/${fs_size /} ${fs_bar 6 /} ${color2}
+ /home    $color${fs_used /home}/${fs_size /home} ${fs_bar 6 /home} ${color2}
+ Ubuntu   $color${fs_used /mnt/homedsk}/${fs_size /mnt/homedsk} ${fs_bar 6 /mnt/homedsk} ${color2}
+ Windows  $color${fs_used /mnt/DE56FA2156F9F9DB}/${fs_size /mnt/DE56FA2156F9F9DB} ${fs_bar 6 /mnt/DE56FA2156F9F9DB} ${color2}
+ /tmp     $color${fs_used /tmp}/${fs_size /tmp} ${fs_bar 6 /tmp}
+$hr
+${color2}networking:
+${color2}wlp8s0: down:$color ${downspeedf wlp8s0} KiB ${color2} - up:$color ${upspeedf wlp8s0} KiB
+${color2}enp1s0: down:$color ${downspeedf enp1s0} KiB ${color2} - up:$color ${upspeedf enp1s0} KiB
+${color3}${downspeedgraph wlp8s0 25,220}${color2}${upspeedgraph wlp8s0 25,220}
+$hr
+${color2}name                pid   cpu%   mem%
+${color} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
+${color} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
+${color} ${top name 3} ${top pid 3} ${top cpu 3} ${top mem 3}
+${color} ${top name 4} ${top pid 4} ${top cpu 4} ${top mem 4}
+${color} ${top name 5} ${top pid 5} ${top cpu 5} ${top mem 5}
+${color} ${top name 6} ${top pid 6} ${top cpu 6} ${top mem 6}
+${color} ${top name 7} ${top pid 7} ${top cpu 7} ${top mem 7}
+${color} ${top name 8} ${top pid 8} ${top cpu 8} ${top mem 8}
+$hr
+${color2} disk read:  ${color} ${diskio_read}
+${color2} disk write: ${color} ${diskio_write}
+${color2} syshd io:   ${color} ${diskio /dev/sda}
+${color2} ${diskiograph}
+$hr
+${color2}wireless ipv4:${color} ${addr wlp8s0}
+${color2}         ipv6:${color} ${v6addrs wlp8s0}
+${color2}essid: ${color}${wireless_essid} ${color2}mac: ${color}${wireless_ap wlp8s0}
+${color2}channel: ${color}${wireless_channel wlp8s0} ${color2}freq: ${color}${wireless_freq wlp8s0} ${color2}mode: ${color}${wireless_mode wlp8s0}

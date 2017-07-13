@@ -1,0 +1,80 @@
+! urxvt
+
+URxvt*geometry:                115x40
+!URxvt*font: xft:Liberation Mono:pixelsize=15,xft:Inconsolata\ for\ Powerline:size=12:antialias=false:hinting=true
+URxvt*font: xft:Inconsolata:pixelsize=17,xft:Inconsolata\ for\ Powerline:size=12:antialias=true:hinting=true
+URxvt*boldFont: xft:Inconsolata:bold:pixelsize=17,xft:Inconsolata\ for\ Powerline:size=12:antialias=false:hinting=true
+!URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=15:antialias=false:hinting=true
+URxvt*depth:                32
+URxvt*borderless: 1
+URxvt*scrollBar:            false
+URxvt*saveLines:  5000000
+URxvt.transparent:      true
+URxvt*.shading: 40
+!URxvt.background: [75]#000000
+URxvt.background: rgba:1111/1111/1111/dddd
+
+! Meta modifier for keybindings
+!URxvt.modifier: super
+
+!! perl extensions
+URxvt.perl-ext:             default,url-select,clipboard,resize-font
+
+! url-select (part of urxvt-perls package)
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.url-select.autocopy:  true
+URxvt.url-select.button:    2
+URxvt.url-select.launcher:  google-chrome-stable
+URxvt.url-select.underline: true
+
+! Nastavuje kopirovani
+URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
+URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+
+! disable the stupid ctrl+shift 'feature'
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!urxvt color scheme:
+
+!URxvt*background: #2B2B2B
+URxvt*background:       rgba:0000/0000/0000/cccc
+!URxvt*foreground: #DEDEDE
+URxvt*foreground: #00FF00
+
+URxvt*colorUL: #86a2b0
+
+! black
+URxvt*color0  : #2E3436
+URxvt*color8  : #555753
+! red
+URxvt*color1  : #CC0000
+URxvt*color9  : #EF2929
+! green
+URxvt*color2  : #4E9A06
+URxvt*color10 : #8AE234
+! yellow
+URxvt*color3  : #C4A000
+URxvt*color11 : #FCE94F
+! blue
+URxvt*color4  : #3465A4
+URxvt*color12 : #729FCF
+! magenta
+URxvt*color5  : #75507B
+URxvt*color13 : #AD7FA8
+! cyan
+URxvt*color6  : #06989A
+URxvt*color14 : #34E2E2
+! white
+URxvt*color7  : #D3D7CF
+URxvt*color15 : #EEEEEC
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #002b37, #002b37, #003642
+rofi.color-normal: #002b37, #819396, #002b37, #003642, #819396
+rofi.color-active: #002b37, #008ed4, #002b37, #003642, #008ed4
+rofi.color-urgent: #002b37, #da4281, #002b37, #003642, #da4281
+
