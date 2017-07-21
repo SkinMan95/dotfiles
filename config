@@ -266,6 +266,10 @@ bindsym $mod+Control+Shift+l exec --no-startup-id i3lock-fancy -f Inconsolata --
 #bindsym $mod+Control+Shift+s exec --no-startup-id i3lock -i /home/skinman95/.config/i3/mother_board_blue.png & systemctl suspend
 bindsym $mod+Control+Shift+s exec --no-startup-id i3lock-fancy -f Inconsolata -- scrot -z && systemctl suspend
 
+# cpupower governors
+bindsym $mod+Control+p exec --no-startup-id sudo cpupower frequency-set -g performance
+bindsym $mod+Control+o exec --no-startup-id sudo cpupower frequency-set -g powersave
+
 # poweroff computer
 bindsym $mod+Control+Shift+p exec --no-startup-id systemctl poweroff
 bindsym $mod+Control+Shift+r exec --no-startup-id systemctl reboot
@@ -314,16 +318,10 @@ exec --no-startup-id dunst
 exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec --no-startup-id ~/.config/i3/touch-screen-disable.sh
 
-#assign [class = "Spotify$'\0'$'\0'"] 10
 for_window [class="Spotify"] move to workspace $workspace10
 assign [class = "Blockify"] $workspace10
-#for_window [class = "Blockify"] resize shrink left 3ppt
-
 for_window [title="Priority • Nozbe"] move to workspace $workspace9, floating enable, resize set 843 702, move absolute position 14 48
 for_window [title="Inbox • Nozbe"] move to workspace $workspace9, floating enable, resize set 843 702, move absolute position 14 48
-
-#exec --no-startup-id i3-msg 'workspace $workspace10 ; exec --no-startup-id spotify ; exec --no-startup-id blockify-ui --log=/home/skinman95/blockify.log ; append_layout /home/skinman95/.config/i3/workspace10.json'
-
 for_window [class="Alarm-clock-applet"] floating enable, resize set 492 399, move absolute position 220 181
 assign [class="google-chrome"] $workspace1
 assign [class="Transmission-gtk"] $workspace8
