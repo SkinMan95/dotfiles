@@ -12,9 +12,9 @@
 set $mod Mod4
 
 set $base00 #101218
-set $base01 #1f222d
-set $base02 #252936
-set $base03 #7780a1
+set $base01 #0f0f0f
+set $base02 #13151b
+set $base03 #484d61
 set $base04 #C0C5CE
 set $base05 #d1d4e0
 set $base06 #C9CCDB
@@ -27,7 +27,7 @@ set $base0C #97e0ff
 set $base0D #97bbf7
 set $base0E #c0b7f9
 set $base0F #fcc09e
-set $baseBorder #505250
+set $base10 #505250
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -193,7 +193,7 @@ bindsym $mod+r mode "resize"
 
 # Widow Colours
 #                         border  background text    indicator
-  client.focused          $baseBorder $baseBorder    $base07 $baseBorder
+  client.focused          $base10 $base10    $base07 $base10
   client.focused_inactive $base02 $base02    $base03 $base02
   client.unfocused        $base02 $base02    $base03 $base02
   client.urgent           $base02 $base08    $base00 $base02
