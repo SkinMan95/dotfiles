@@ -141,27 +141,27 @@ set $workspace18 "18"
 set $workspace19 "19"
 
 mode "extra-workspace" {
-     bindsym $mod+1 workspace $workspace10
-     bindsym $mod+2 workspace $workspace11
-     bindsym $mod+3 workspace $workspace12
-     bindsym $mod+4 workspace $workspace13
-     bindsym $mod+5 workspace $workspace14
-     bindsym $mod+6 workspace $workspace15
-     bindsym $mod+7 workspace $workspace16
-     bindsym $mod+8 workspace $workspace17
-     bindsym $mod+9 workspace $workspace18
-     bindsym $mod+0 workspace $workspace19
+     bindsym $mod+1 workspace $workspace11
+     bindsym $mod+2 workspace $workspace12
+     bindsym $mod+3 workspace $workspace13
+     bindsym $mod+4 workspace $workspace14
+     bindsym $mod+5 workspace $workspace15
+     bindsym $mod+6 workspace $workspace16
+     bindsym $mod+7 workspace $workspace17
+     bindsym $mod+8 workspace $workspace18
+     bindsym $mod+9 workspace $workspace19
+     bindsym $mod+0 workspace $workspace10
 
-     bindsym $mod+Shift+1 move container to workspace $workspace10
-     bindsym $mod+Shift+2 move container to workspace $workspace11
-     bindsym $mod+Shift+3 move container to workspace $workspace12
-     bindsym $mod+Shift+4 move container to workspace $workspace13
-     bindsym $mod+Shift+5 move container to workspace $workspace14
-     bindsym $mod+Shift+6 move container to workspace $workspace15
-     bindsym $mod+Shift+7 move container to workspace $workspace16
-     bindsym $mod+Shift+8 move container to workspace $workspace17
-     bindsym $mod+Shift+9 move container to workspace $workspace18
-     bindsym $mod+Shift+0 move container to workspace $workspace19
+     bindsym $mod+Shift+1 move container to workspace $workspace11
+     bindsym $mod+Shift+2 move container to workspace $workspace12
+     bindsym $mod+Shift+3 move container to workspace $workspace13
+     bindsym $mod+Shift+4 move container to workspace $workspace14
+     bindsym $mod+Shift+5 move container to workspace $workspace15
+     bindsym $mod+Shift+6 move container to workspace $workspace16
+     bindsym $mod+Shift+7 move container to workspace $workspace17
+     bindsym $mod+Shift+8 move container to workspace $workspace18
+     bindsym $mod+Shift+9 move container to workspace $workspace19
+     bindsym $mod+Shift+0 move container to workspace $workspace10
 
      bindsym Return mode "default"
      bindsym Escape mode "default"
