@@ -32,7 +32,8 @@
 
 (load-theme 'manoj-dark)
 
-(set-default-font 'Terminus-9)
+ ;; (set-default-font 'Terminus-9)
+(set-default-font "Inconsolata-12")
 
 (winner-mode)
 (global-set-key [f9] 'delete-other-windows)
@@ -71,3 +72,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(windmove-default-keybindings)
+
+(tool-bar-mode -1)
