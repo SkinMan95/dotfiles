@@ -78,6 +78,8 @@
 (tool-bar-mode -1)
 (toggle-scroll-bar -1)
 
+;; Cambio de diccionarios para checkeo de ortografia
+
 (global-set-key
  [f3]
  (lambda ()
@@ -88,3 +90,9 @@
  (lambda ()
    (interactive)
    (ispell-change-dictionary "english")))
+
+;; Ajuste de tamanio de ventanas
+(global-set-key (kbd "<C-up>") 'shrink-window)
+(global-set-key (kbd "<C-down>") 'enlarge-window)
+(global-set-key (kbd "<C-left>") 'shrink-window-horizontally)
+(global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
