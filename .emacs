@@ -77,3 +77,14 @@
 
 (tool-bar-mode -1)
 (toggle-scroll-bar -1)
+
+(global-set-key
+ [f3]
+ (lambda ()
+   (interactive)
+   (ispell-change-dictionary "castellano")))
+(global-set-key
+ [f4]
+ (lambda ()
+   (interactive)
+   (ispell-change-dictionary "english")))
