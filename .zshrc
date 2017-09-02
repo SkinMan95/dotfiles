@@ -12,6 +12,7 @@ DEFAULT_USER="skinman95"
 export EDITOR="emacs -q -nw"
 
 mkdir -p /tmp/google-chrome
+mkdir -p /tmp/spotify-data
 #screenfetch
 export PATH="$PATH:/home/skinman95/.local/bin"
 
