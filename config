@@ -242,7 +242,7 @@ bar {
 	status_command bumblebee-status -m spotify sensors cpu memory load nic traffic disk amixer battery datetime -p nic.states=up traffic.states=up disk.path=/ datetime.format="%Y-%m-%d %H:%M:%S" -t gruvbox-powerline
 	position top
 	#font xft:Inconsolate 9
-	font pango:Inconsolata 7, FontAwesome 7
+	font pango:Inconsolata 8, FontAwesome 8
         strip_workspace_numbers no
         #bindsym button4 nop
         #bindsym button5 nop
