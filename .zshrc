@@ -9,10 +9,13 @@
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="af-magic"
 DEFAULT_USER="skinman95"
-export EDITOR="emacs -q -nw"
+export EDITOR="emacs --no-desktop -nw"
 
 mkdir -p /tmp/google-chrome
 mkdir -p /tmp/spotify-data
+export MAUDE_LIB=/opt/maude
+# alias maude-cvc='cd "$MAUDE_LIB"; maude-cvc'
+# alias maude-yices='cd "$MAUDE_LIB"; maude-yices'
 #screenfetch
 export PATH="$PATH:/home/skinman95/.local/bin"
 
