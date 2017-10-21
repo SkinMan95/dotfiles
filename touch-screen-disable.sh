@@ -1,8 +1,17 @@
 #!/bin/bash
 
-xinput disable "$(xinput | python -c 'from sys import stdin
+while true; do
+xinput disable "$(xinput | python -c 'import io
+import sys
 
-lines = stdin.readlines()
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+
+input_stream = io.TextIOWrapper(sys.stdin.buffer, encoding="utf-8", errors="ignore")
+
+lines = input_stream.readlines()
+
+eprint("\n".join(lines))
 
 res = None
 
@@ -15,4 +24,4 @@ for line in lines:
 
 if res != None:
     print(res)
-')" || notify-send -u critical "ERROR" "Fallo desactivar la pantalla tactil"
+')" && break || (notify-send -u critical "ERROR" "Fallo desactivar la pantalla tactil"; sleep 5); done
