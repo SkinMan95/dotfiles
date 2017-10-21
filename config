@@ -311,7 +311,7 @@ exec --no-startup-id spotify
 #exec --no-startup-id blockify-ui --log=/home/skinman95/blockify.log
 exec --no-startup-id amixer sset Master 20%
 exec --no-startup-id alarm-clock-applet
-exec --no-startup-id qbittorrent
+# exec --no-startup-id qbittorrent
 exec --no-startup-id ~/.config/i3/battery_watch.sh
 exec --no-startup-id bash -c 'sleep 7; i3-msg [title="Alarms"] kill'
 #exec --no-startup-id ~/btsync/btsync.sh
