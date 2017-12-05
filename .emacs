@@ -30,7 +30,7 @@
 
 (show-paren-mode 1)
 
-(load-theme 'manoj-dark)
+(load-theme 'wombat)
 
  ;; (set-default-font 'Terminus-9)
 (set-default-font "Inconsolata-12")
@@ -96,3 +96,7 @@
 (global-set-key (kbd "<C-down>") 'enlarge-window)
 (global-set-key (kbd "<C-left>") 'shrink-window-horizontally)
 (global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
+(put 'upcase-region 'disabled nil)
+
+(load "~/.emacs.d/maude-mode2.el")
+(require 'maude-mode)
