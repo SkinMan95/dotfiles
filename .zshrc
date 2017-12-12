@@ -11,8 +11,9 @@ ZSH_THEME="af-magic"
 DEFAULT_USER="skinman95"
 export EDITOR="emacs --no-desktop -nw"
 
-mkdir -p /tmp/google-chrome
-mkdir -p /tmp/spotify-data
+# mkdir -p /tmp/google-chrome
+# mkdir -p /tmp/spotify-data
+# mkdir -p /tmp/firefox-cache
 export MAUDE_LIB=/opt/maude
 # alias maude-cvc='cd "$MAUDE_LIB"; maude-cvc'
 # alias maude-yices='cd "$MAUDE_LIB"; maude-yices'
@@ -27,7 +28,7 @@ export PATH="$PATH:/home/skinman95/.local/bin"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="true"
+# DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
