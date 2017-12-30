@@ -239,8 +239,8 @@ bindsym $mod+r mode "resize"
 bar {
         #status_command i3status
 	#status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	status_command bumblebee-status -m spotify sensors cpu memory load nic traffic disk amixer battery datetime -p nic.states=up nic.exclude=vmnet8,vmnet1,lo,docker0 traffic.states=up traffic.exclude=vmnet8,vmnet1,lo,docker0 disk.path=/ datetime.format="%Y-%m-%d %H:%M:%S" -t gruvbox-powerline
-	position top
+	status_command bumblebee-status -m spotify sensors cpu memory load nic traffic disk amixer battery datetime -p nic.states=up nic.exclude=vmnet8,vmnet1,lo,docker0 traffic.states=up traffic.exclude=vmnet8,vmnet1,lo,docker0 disk.path=/ datetime.format="%Y-%m-%d %H:%M:%S" -t gruvbox
+	# position down
 	#font xft:Inconsolate 9
 	font pango:Inconsolata 8, FontAwesome 8
         strip_workspace_numbers no
@@ -261,10 +261,8 @@ bar {
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/Screenshots'
 
 # lock computer
-#bindsym $mod+Control+Shift+l exec --no-startup-id i3lock -i /home/skinman95/.config/i3/mother_board_blue.png
-bindsym $mod+Control+Shift+l exec --no-startup-id i3lock-fancy -f Inconsolata -- scrot -z
-#bindsym $mod+Control+Shift+s exec --no-startup-id i3lock -i /home/skinman95/.config/i3/mother_board_blue.png & systemctl suspend
-bindsym $mod+Control+Shift+s exec --no-startup-id i3lock-fancy -f Inconsolata -- scrot -z && systemctl suspend
+bindsym $mod+Control+Shift+l exec --no-startup-id ~/.config/i3/lock-screen.sh
+bindsym $mod+Control+Shift+s exec --no-startup-id ~/.config/i3/lock-screen.sh & systemctl suspend
 
 # cpupower governors
 bindsym $mod+Control+p exec --no-startup-id sudo cpupower frequency-set -g performance
@@ -297,28 +295,22 @@ bindsym $mod+o exec --no-startup-id ~/.config/i3/spotify-control.sh prev
 bindsym $mod+p exec --no-startup-id ~/.config/i3/spotify-control.sh next
 
 #background apps
-#exec --no-startup-id nm-applet --sm-disable
+exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk -l 4.34:-74.4
 exec --no-startup-id conky
 exec --no-startup-id variety
 exec --no-startup-id dropbox
-#exec --no-startup-id xscreensaver -no-splash
-exec --no-startup-id skype
-#exec --no-startup-id ~/.Nozbe/Nozbe
+# exec --no-startup-id skype
 exec --no-startup-id spotify
-#exec --no-startup-id spotify-adkiller.sh &
 #exec --no-startup-id volumeicon
-#exec --no-startup-id blockify-ui --log=/home/skinman95/blockify.log
 exec --no-startup-id amixer sset Master 20%
-exec --no-startup-id alarm-clock-applet
 # exec --no-startup-id qbittorrent
 exec --no-startup-id ~/.config/i3/battery_watch.sh
-exec --no-startup-id bash -c 'sleep 7; i3-msg [title="Alarms"] kill'
-#exec --no-startup-id ~/btsync/btsync.sh
 exec --no-startup-id "devmon --no-gui"
 exec --no-startup-id dunst
 exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec --no-startup-id ~/.config/i3/touch-screen-disable.sh
+exec --no-startup-id xautolock -locker ~/.config/i3/lock-screen.sh -detectsleep
 
 for_window [class="Spotify"] move to workspace $workspace10
 assign [class = "Blockify"] $workspace10
