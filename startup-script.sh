@@ -11,3 +11,11 @@ echo Y | sudo tee /sys/module/snd_hda_intel/parameters/power_save_controller
 
 pkill pulseaudio
 pulseaudio --start
+
+# ================
+
+vmtouch -dl /home/skinman95/.config/i3/battery_watch.sh
+vmtouch -dl /home/skinman95/.config/i3/lock-screen.sh
+vmtouch -dl /home/skinman95/.config/i3/show-wattage.sh
+vmtouch -dl /home/skinman95/.config/i3/spotify-control.sh
+vmtouch -dl /home/skinman95/.oh-my-zsh/oh-my-zsh.sh
