@@ -239,7 +239,7 @@ bindsym $mod+r mode "resize"
 bar {
         #status_command i3status
 	#status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	status_command bumblebee-status -m spotify sensors cpu memory load nic traffic disk amixer battery datetime -p amixer.right-click="pavucontrol" disk.right-click="nautilus /" nic.states=up nic.exclude=vmnet8,vmnet1,lo,docker0 traffic.states=up traffic.exclude=vmnet8,vmnet1,lo,docker0 disk.path=/ datetime.format="%Y-%m-%d %H:%M:%S" -t gruvbox
+	status_command bumblebee-status -m spotify sensors cpu memory load nic traffic disk amixer battery datetime -p amixer.left-click="pavucontrol" nic.states=up nic.exclude=vmnet8,vmnet1,lo,docker0 traffic.states=up traffic.exclude=vmnet8,vmnet1,lo,docker0 disk.path=/ datetime.format="%Y-%m-%d %H:%M:%S" -t default
 	# position down
 	#font xft:Inconsolate 9
 	font pango:Inconsolata 8, FontAwesome 8
