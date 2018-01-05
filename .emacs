@@ -127,3 +127,5 @@
 
 ;; Git Gutter = changed lines highlighter
 (global-git-gutter-mode +1)
+(custom-set-variables
+ '(git-gutter:update-interval 2))
