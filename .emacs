@@ -41,7 +41,7 @@
 (global-set-key (kbd "<f7>") 'winner-undo)
 (global-set-key (kbd "C-<f7>") 'winner-redo)
 
-(desktop-save-mode 1)
+;; (desktop-save-mode 1)
 
 (defun shell-other-window ()
   "Open a `shell' in a new window."
@@ -65,7 +65,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (markdown-mode))))
+ '(package-selected-packages (quote (multiple-cursors markdown-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -100,3 +100,27 @@
 
 (load "~/.emacs.d/maude-mode2.el")
 (require 'maude-mode)
+
+;; (global-set-key "\M-c" "\C-a\C- \C-n\M-w\C-y")
+(defun duplicate-line()
+  (interactive)
+  (move-beginning-of-line 1)
+  (kill-line)
+  (yank)
+  (open-line 1)
+  (next-line 1)
+  (yank)
+)
+(global-set-key (kbd "M-c") 'duplicate-line)
+
+(require 'multiple-cursors)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+;; (setq redisplay-dont-pause f)
+
+;; set transparency
+(set-frame-parameter (selected-frame) 'alpha '(97 97))
+(add-to-list 'default-frame-alist '(alpha 97 97))
