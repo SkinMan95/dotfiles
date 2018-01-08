@@ -286,8 +286,10 @@ bindsym Shift+XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2 # dec
 # extras
 bindsym XF86Calculator exec --no-startup-id gnome-calculator
 
-# ranger
+# ranger + smplayer
 bindsym $mod+t exec --no-startup-id termite -e ranger
+bindsym $mod+Shift+t exec --no-startup-id smplayer
+bindsym $mod+Control+Shift+t exec --no-startup-id vlc
 
 # spotify
 bindsym $mod+i exec --no-startup-id ~/.config/i3/spotify-control.sh play
