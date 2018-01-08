@@ -144,6 +144,8 @@
        'hi-red-b)
 )
 
+
+(add-hook 'css-mode-hook 'rainbow-mode)
 (add-hook 'prog-mode-hook 'hilite-todos)
 (add-hook 'prog-mode-hook 'company-mode)
 
@@ -157,4 +159,3 @@
 
 (require 'theme-changer)
 (change-theme 'magonyx 'weyland-yutani)
-
