@@ -30,7 +30,7 @@
 
 (show-paren-mode 1)
 
-(load-theme 'wombat)
+;; (load-theme 'wombat)
 
  ;; (set-default-font 'Terminus-9)
 (set-default-font "Inconsolata-12")
@@ -59,6 +59,7 @@
 (require 'package)
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/"))
+
 (package-initialize)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -142,3 +143,12 @@
 
 (add-hook 'prog-mode-hook 'hilite-todos)
 (add-hook 'prog-mode-hook 'company-mode)
+
+(add-to-list 'load-path "~/.emacs.d/elisp/theme-changer")
+;; (load "~/.emacs.d/elisp/theme-changer/theme-changer.el")
+;; 4.34:-74.4
+(setq calendar-latitude 4.34)
+(setq calendar-longitude -74.4)
+
+(require 'theme-changer)
+(change-theme 'whiteboard 'wombat)
