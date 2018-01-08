@@ -294,6 +294,10 @@ bindsym $mod+i exec --no-startup-id ~/.config/i3/spotify-control.sh play
 bindsym $mod+o exec --no-startup-id ~/.config/i3/spotify-control.sh prev
 bindsym $mod+p exec --no-startup-id ~/.config/i3/spotify-control.sh next
 
+# emacs
+bindsym $mod+u exec --no-startup-id emacs
+bindsym $mod+Shift+u exec --no-startup-id termite -e "emacs -nw"
+
 #background apps
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk -l 4.34:-74.4
