@@ -1,0 +1,128 @@
+cat 3.listfile 
+ls
+cd ..
+ls
+tree
+pfccomp 3.p 3.objfile 3.listfile
+cd punto3/
+pfccomp 3.p 3.objfile 3.listfile
+ll
+ls -l
+pfccomp 3.p 3.listname 3.objfile 
+pfccomp 3.p 3.listfile 3.objfile 
+pfccomp 3.p 3.listfile 3.objfile 
+pfccomp 3.p 3.listfile 3.objfile 
+pfccomp 3.p 3.listfile 3.objfile 
+cat 3.listfile
+pfccomp 3.p 3.listfile 3.objfile 
+cat 3.listfile
+cd ..
+ls
+mkdir password-format-to-pass
+cd password-format-to-pass/
+touch passwords-to-pass.py
+ls
+git status
+git diff
+exit
+cd Documents/
+ls
+mkdir TPRO
+cd TSOR/
+cd ..
+cd TPRO
+ls
+mkdir 'Primer Tercio'
+cd Primer\ Tercio/
+ls
+cd ..
+ls
+rm -rf Primer\ Tercio/
+mkdir Kaldewaij
+cd Kaldewaij/
+ls
+touch eje37-2.py
+python
+clear
+
+cd ..
+ls
+mdkir 'Parcial 1'
+mkdir 'Parcial 1'
+mv 2017-2-fmef-mt01.pdf Parcial\ 1/
+ls
+ls
+python f91.py
+python f91.py
+cat *.out
+cd ..
+cd ..
+cd 11687\ -\ Digits/
+ls
+mkdir 'test_cases'
+cd test_cases/
+ls
+cp ../../10696\ -\ f91/test_cases/*.sh ./
+cp ../../10696\ -\ f91/test_cases/*.py ./
+ls
+ls
+cat check_sol.sh 
+cp ~/Documents/Competitive\ Problems/EJES\ UVa/Resueltos/11687\ -\ Digits.cpp ./
+ls
+g++ 11687\ -\ Digits.cpp -o res
+sh ./gen_script.sh 
+sh ./gen_script.sh 10
+ls
+cat check_sol.sh 
+sh ./check_sol.sh 10
+echo "" > test10.out
+sh ./check_sol.sh 10
+sh ./gen_script.sh 10
+sh ./check_sol.sh 10
+cat test*.in
+cat test*.out
+sh ./gen_script.sh 10
+cat test*.out
+sh ./check_sol.sh 10
+ls
+cat test*.out
+cat test*.in
+cat test*.out
+sh ./check_sol.sh 10
+sh ./gen_script.sh 10
+sh ./check_sol.sh 10
+cat test*.out
+cat test*.in
+sh ./check_sol.sh 10
+cat test*.out
+cat test*.in
+clear
+
+ls
+python digits.py
+python digits.py
+python digits.py
+cd ..
+cd ..
+ls
+cd 621\ -\ Secret\ Research/
+ls
+mkdir 'test_cases'
+cp ../11687\ -\ Digits/test_cases/*.sh ./
+ls
+mv *.sh test_cases/
+ls
+cd test_cases/
+ls
+cp ~/Documents/Competitive\ Problems/EJES\ UVa/Resueltos/621\ -\ Secret\ Research.cpp ./
+ls
+g++ 621\ -\ Secret\ Research.cpp -o res
+sh ./gen_script.sh 10
+sh ./gen_script.sh 10
+ls
+cat test*
+sh ./gen_script.sh 10
+cat test*
+sh ./gen_script.sh 14
+sh ./check_sol.sh 
+python

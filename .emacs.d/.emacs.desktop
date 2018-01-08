@@ -1,0 +1,523 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Wed Jan  3 23:18:53 2018
+;; Desktop file format version 208
+;; Emacs version 25.3.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23117 43821 693362 991000) (desktop . "208") "skinman95@SkinLenovo" nil nil ((((font-backend xft x) (font . "-PfEd-Inconsolata-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1") (font-parameter . "Inconsolata-12") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#f6f3e8") (background-color . "#242424") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . dark) (cursor-color . "#656565") (environment) (sticky) (frameset--id . "6821-82D7-9FAF-EC34") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (visibility . t) (display . ":0") (explicit-name) (height . 57) (width . 236) (left . 0) (top . 0)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 5) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 80) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 40) (min-pixel-height-safe . 18) (min-pixel-width-safe . 16)) leaf (pixel-width . 1920) (pixel-height . 1015) (total-width . 240) (total-height . 56) (normal-height . 1.0) (normal-width . 1.0) (buffer "3H453WZZ91.txt" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins 1) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 1) (start . 1))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("2 " "section" ";" "const" "s" "modo"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.config/i3/.zshrc" "~/Documents/MIT-Course-6.00.1x/Week 6/prueba3.py" "~/Documents/MIT-Course-6.00.1x/Week 6/prueba2.py" "~/Documents/MIT-Course-6.00.1x/Week 6/prueba.py" "~/Documents/gen_perfect.c" "~/Documents/gen_perfect_single.c" "~/Documents/prueba_thread.c" "~/Documents/gen_perfect.c" "~/Documents/gen_perfect.py" "~/Documents/perfect.py" "~/Documents/MIT-Course-6.00.1x/Week 5/hand.py" "~/Documents/MIT-Course-6.00.1x/Week 5/prueba.py" "~/Documents/MIT-Course-6.00.1x/Midterm/problem9.py" "~/Documents/MIT-Course-6.00.1x/Midterm/problem8.py" "~/Documents/MIT-Course-6.00.1x/Midterm/problem7.py" "~/Documents/MIT-Course-6.00.1x/Midterm/problem6.py" "~/Documents/MIT-Course-6.00.1x/Midterm/problem5.py" "~/Documents/MIT-Course-6.00.1x/Midterm/problem4.py" "~/Documents/MIT-Course-6.00.1x/Week 4/*" "~/Documents/MIT-Course-6.00.1x/Week 4/prueba.py" "~/Documents/MIT-Course-6.00.1x/Week 3/Problem Set 3/*" "~/.conkyrc" "~/.config/i3/config" "~/.config/i3/show-wattage.sh" "~/.config/i3/show-wattage.py" "~/.config/i3/config" "~/.config/i3/touch-screen-disable.sh" "~/.config/i3/touch-screen-disable.py" "~/.config/i3/battery_watch.sh" "~/.config/i3/touch-screen-disable.sh" "~/verify.py" "~/Documents/FRED/Laboratorios/Laboratorio 3/laboratorio-3.tex" "~/Documents/ECIGMA/inputs/156.in" "~/Documents/ECIGMA/156 - Ananagrams.cpp" "~/Documents/ECIGMA/inputs/10878.in" "~/Documents/ECIGMA/10878 - Decode the tape.cpp" "~/Documents/ECIGMA/inputs/494.in" "~/Documents/ECIGMA/494 - Kindergarden Counting Game.cpp" "~/Documents/ECIGMA/10055 - Hashmat the Brave Warrior.cpp" "~/Documents/ECIGMA/11547 - Automatic Answer.cpp" "~/Documents/ECIGMA/inputs/10815.in" "~/Documents/Competitive Problems/EJES UVa/Resueltos/11022 - String Factoring.cpp" "~/Documents/ECIGMA/" "~/Documents/Competitive Problems/EJES UVa/Resueltos/573 - The Snail.cpp" "~/Documents/Monitoria Investigacion/Proyecto de Investigacion/ECI-RCPSP/README.md" "~/.emacs" "~/Documents/Competitive Problems/EJES UVa/10029 - Edit Step Ladders.cpp" "~/Documents/Competitive Problems/EJES UVa/Resueltos/11022 - String Factoring.cpp" "~/10029 - Edit Step Ladders.cpp" "~/Documents/Competitive Problems/EJES UVa/out" "~/Documents/Competitive Problems/EJES UVa/inputs/11022.in" "~/.Xdefaults" "~/Documents/Competitive Problems/ACM-ICPC/Resueltos/3026 - Period.cpp" "~/Documents/Competitive Problems/EJES UVa/11022 - String Factoring.cpp" "~/Documents/Competitive Problems/ACM-ICPC/inputs/3026.in" "~/Documents/Competitive Problems/EJES UVa/Resueltos/11475 - Extend to Palindromes.cpp" "~/Documents/Competitive Problems/ACM-ICPC/3026 - Period.cpp" "~/Documents/Competitive Problems/EJES UVa/inputs/11475.in" "~/Documents/Competitive Problems/ACM-ICPC/inputs/6823.in" "~/Documents/Competitive Problems/ACM-ICPC/prueba.c" "~/Documents/Competitive Problems/ACM-ICPC/6823 - Counting substhreengs.cpp" "~/Documents/Competitive Problems/EJES UVa/11475 - Extend to Palindromes.cpp" "~/.Xdefaults" "~/Documents/Competitive Problems/EJES UVa/inputs/10603.in" "~/Documents/Competitive Problems/EJES UVa/prueba.c" "~/Documents/Competitive Problems/ACM-ICPC/Resueltos/2166 - Move the Water.cpp" "~/Documents/Competitive Problems/EJES UVa/10603 - Fill.cpp" "~/Documents/Competitive Problems/EJES UVa/inputs/10054.in" "~/Documents/Competitive Problems/EJES UVa/10054 - The Necklace.cpp" "~/Documents/Competitive Problems/EJES UVa/11514 - Batman.cpp" "~/Documents/Competitive Problems/EJES UVa/inputs/907.in" "~/Documents/Competitive Problems/EJES UVa/907 - Winterim Backpacking Trip.cpp" "~/Documents/Competitive Problems/EJES UVa/out" "~/Documents/Competitive Problems/EJES UVa/inputs/10810.in" "~/Documents/Competitive Problems/EJES UVa/10810 - Ultra-QuickSort.cpp" "~/Documents/Competitive Problems/EJES UVa/inputs/10664.in" "~/Documents/Competitive Problems/EJES UVa/Resueltos/11332 - Summing Digits.cpp" "~/Documents/Competitive Problems/EJES UVa/Resueltos/11687 - Digits.cpp" "~/Documents/Competitive Problems/EJES UVa/Resueltos/11462 - Age Sort.cpp" "~/Documents/Competitive Problems/EJES UVa/10664 - Luggage.cpp" "~/Documents/Competitive Problems/EJES UVa/11517 - Exact Change.cpp" "~/Documents/Competitive Problems/EJES UVa/out" "~/Documents/Competitive Problems/ACM-ICPC/Resueltos/4212 - Candy.cpp" "~/Documents/Competitive Problems/EJES UVa/inputs/705.in" "~/Documents/Competitive Problems/EJES UVa/705 - Slash Maze.cpp" "~/Documents/Competitive Problems/EJES UVa/inputs/10099.in" "~/Documents/Competitive Problems/EJES UVa/10099 - The Tourist Guide.cpp" "~/Documents/Competitive Problems/EJES UVa/inputs/10874.in" "~/Documents/Competitive Problems/EJES UVa/10874 - Segments.cpp" "~/Documents/Competitive Problems/EJES UVa/inputs/13118.in" "~/Documents/Competitive Problems/EJES UVa/out" "~/Documents/Competitive Problems/EJES UVa/13118 - Binary Land.cpp" "~/Documents/Competitive Problems/EJES UVa/10054 - The Necklace.cpp" "~/Documents/Competitive Problems/EJES UVa/inputs/10099.in" "~/Documents/Competitive Problems/EJES UVa/10099 - The Tourist Guide.cpp" "~/Documents/Competitive Problems/EJES UVa/inputs/10687.in" "~/Documents/Competitive Problems/EJES UVa/Resueltos/10067 - Playing with Wheels.cpp" "~/Documents/Competitive Problems/EJES UVa/10687 - Monitoring the Amazon.cpp" "~/Documents/Competitive Problems/EJES UVa/out" "~/Documents/Competitive Problems/EJES UVa/10577in.py"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/skinman95/Downloads/3H453WZZ91.txt"
+  "3H453WZZ91.txt"
+  'text-mode
+  '(linum-mode TeX-PDF-mode)
+  1
+  '(2994 nil)
+  nil
+  nil
+  nil
+  '((mark-ring (2994))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Downloads/lectureCode_L17_code.py"
+  "lectureCode_L17_code.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  4142
+  '(1882 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (749 6351 6351))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Downloads/Untitled.py"
+  "Untitled.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Downloads/flipcoin.py"
+  "flipcoin.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  1239
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/skinman95/.config/i3/startup-script.sh"
+  "startup-script.sh"
+  'sh-mode
+  '(linum-mode TeX-PDF-mode)
+  326
+  '(184 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (184 164 78 146 51 52 127 23 97 97 97 97 97 1))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/.config/i3/.zshrc"
+  ".zshrc"
+  'sh-mode
+  '(linum-mode TeX-PDF-mode)
+  559
+  '(471 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3140 560))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Downloads/a4-arquitectura.com.txt"
+  "a4-arquitectura.com.txt"
+  'text-mode
+  '(linum-mode TeX-PDF-mode)
+  1019
+  '(1019 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-with-signature-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/etc/ssh/ssh_config"
+  "ssh_config"
+  'fundamental-mode
+  '(linum-mode TeX-PDF-mode)
+  124
+  '(nil nil)
+  t
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Downloads/jar.maude"
+  "jar.maude"
+  'maude-mode
+  '(linum-mode TeX-PDF-mode)
+  375
+  '(1804 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1484 1305 802 724 529 624 745 835 633 624 296))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/Competitive Problems/EJES UVa/10054 - The Necklace.cpp"
+  "10054 - The Necklace.cpp"
+  'c++-mode
+  '(abbrev-mode linum-mode TeX-PDF-mode)
+  587
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (1673 1 2006 2004 2096 2001 2096 2096 2001 2152 2122 2122 2122 2122 2208 2181))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/Competitive Problems/EJES UVa/inputs/10054.in"
+  "10054.in"
+  'fundamental-mode
+  '(linum-mode TeX-PDF-mode)
+  572391
+  '(18329 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring (572391 1 1 1 1 1 1 1 1))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/MIT-Course-6.00.1x/Week 6/prueba2.py"
+  "prueba2.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  71
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (290 290 296 714 416 80 1))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/MIT-Course-6.00.1x/Week 6/prueba.py"
+  "prueba.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  810
+  '(718 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (79 1 744 784 757 30 461 80))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/gen_perfect_single.c"
+  "gen_perfect_single.c"
+  'c-mode
+  '(abbrev-mode linum-mode TeX-PDF-mode)
+  557
+  '(278 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1 198 198 279))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/gen_perfect.c"
+  "gen_perfect.c"
+  'c-mode
+  '(abbrev-mode linum-mode TeX-PDF-mode)
+  557
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/prueba_thread.c"
+  "prueba_thread.c"
+  'c-mode
+  '(abbrev-mode linum-mode TeX-PDF-mode)
+  246
+  '(1089 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1 1 1 1 1 1))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/perfect.py"
+  "perfect.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  163
+  '(522 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (371 512))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/gen_perfect.py"
+  "gen_perfect.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  89
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/Competitive Problems/EJES UVa/11514 - Batman.cpp"
+  "11514 - Batman.cpp"
+  'c++-mode
+  '(abbrev-mode linum-mode TeX-PDF-mode)
+  1326
+  '(2037 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/MIT-Course-6.00.1x/Week 5/prueba.py"
+  "prueba.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  718
+  '(705 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (692 679 666 1 1 1 1 1 1))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/MIT-Course-6.00.1x/Midterm/problem8.py"
+  "problem8.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  338
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (199 1 339 1 1 1 1 340 1))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/MIT-Course-6.00.1x/Midterm/problem9.py"
+  "problem9.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  828
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (557 393 997 963 867 933 903 851 830 1))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/MIT-Course-6.00.1x/Midterm/problem7.py"
+  "problem7.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  343
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (471 447 402 363 429 384 345 474 474 345 1))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/MIT-Course-6.00.1x/Midterm/problem6.py"
+  "problem6.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  407
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (407 409 445 338 324 352 1))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/MIT-Course-6.00.1x/Midterm/problem5.py"
+  "problem5.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  1
+  '(348 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (371 1))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/MIT-Course-6.00.1x/Midterm/problem4.py"
+  "problem4.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  197
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (184 1))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/Competitive Problems/EJES UVa/907 - Winterim Backpacking Trip.cpp"
+  "907 - Winterim Backpacking Trip.cpp"
+  'c++-mode
+  '(abbrev-mode linum-mode TeX-PDF-mode)
+  735
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (748 528 756 671 756 688 735 631 735 685 569 595 608 641 887 708))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/verify.py"
+  "verify.py"
+  'python-mode
+  '(linum-mode TeX-PDF-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/Competitive Problems/EJES UVa/inputs/907.in"
+  "907.in"
+  'fundamental-mode
+  '(linum-mode TeX-PDF-mode)
+  15
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (15))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/Competitive Problems/EJES UVa/13118 - Binary Land.cpp"
+  "13118 - Binary Land.cpp"
+  'c++-mode
+  '(abbrev-mode linum-mode TeX-PDF-mode)
+  1
+  '(528 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1 528 1 2527 4098 3995 1767 2096 2106 2144 1 4379 593 2144 1766 2405))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/ECIGMA/inputs/156.in"
+  "156.in"
+  'fundamental-mode
+  '(linum-mode TeX-PDF-mode)
+  138
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/ECIGMA/inputs/10878.in"
+  "10878.in"
+  'fundamental-mode
+  '(linum-mode TeX-PDF-mode)
+  3373
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (3372 1 1 1 1 1 1 1 1 1))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/ECIGMA/inputs/494.in"
+  "494.in"
+  'fundamental-mode
+  '(linum-mode TeX-PDF-mode)
+  132
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/ECIGMA/inputs/10815.in"
+  "10815.in"
+  'fundamental-mode
+  '(linum-mode TeX-PDF-mode)
+  1
+  '(15706 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1 1))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/Competitive Problems/EJES UVa/Resueltos/11022 - String Factoring.cpp"
+  "11022 - String Factoring.cpp"
+  'c++-mode
+  '(abbrev-mode linum-mode TeX-PDF-mode)
+  569
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "ECIGMA"
+  'dired-mode
+  '(linum-mode TeX-PDF-mode)
+  251
+  '(nil nil)
+  t
+  '("/home/skinman95/Documents/ECIGMA/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/Competitive Problems/EJES UVa/inputs/10664.in"
+  "10664.in"
+  'fundamental-mode
+  '(linum-mode TeX-PDF-mode)
+  80
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/Competitive Problems/EJES UVa/Resueltos/573 - The Snail.cpp"
+  "573 - The Snail.cpp"
+  'c++-mode
+  '(abbrev-mode linum-mode TeX-PDF-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/Competitive Problems/EJES UVa/inputs/13118.in"
+  "13118.in"
+  'fundamental-mode
+  '(linum-mode TeX-PDF-mode)
+  265
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/Competitive Problems/EJES UVa/inputs/10099.in"
+  "10099.in"
+  'fundamental-mode
+  '(linum-mode TeX-PDF-mode)
+  21323
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring (151 21324 1 1 1 1 151 21323))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/Competitive Problems/EJES UVa/10874 - Segments.cpp"
+  "10874 - Segments.cpp"
+  'c++-mode
+  '(abbrev-mode linum-mode TeX-PDF-mode)
+  1388
+  '(1265 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1201 1353 1141 580 1 452 734 872 916 1243 1201 1263 1265 1217 1195 1386))))
+
+(desktop-create-buffer 208
+  "/home/skinman95/Documents/Competitive Problems/EJES UVa/10029 - Edit Step Ladders.cpp"
+  "10029 - Edit Step Ladders.cpp"
+  'c++-mode
+  '(abbrev-mode linum-mode TeX-PDF-mode)
+  731
+  '(668 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (92 1107 1 1473 645 481 750 1496 667 750 918 674 595 878 918 731))))
+
