@@ -68,7 +68,7 @@
  '(git-gutter:update-interval 2)
  '(package-selected-packages
    (quote
-    (rainbow-mode git-gutter multiple-cursors markdown-mode))))
+    (company rainbow-mode git-gutter multiple-cursors markdown-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -114,7 +114,7 @@
   (next-line 1)
   (yank)
 )
-(global-set-key (kbd "M-c") 'duplicate-line)
+(global-set-key (kbd "C-S-d") 'duplicate-line)
 
 (require 'multiple-cursors)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
@@ -133,3 +133,12 @@
 
 ;; Activa Rainbow mode para colores hexadecimales (o por nombre)
 (rainbow-mode)
+(company-mode)
+
+(defun hilite-todos ()
+  (highlight-lines-matching-regexp "\\<\\(FIXME\\|TODO\\|XXX\\):?" 
+       'hi-red-b)
+)
+
+(add-hook 'prog-mode-hook 'hilite-todos)
+(add-hook 'prog-mode-hook 'company-mode)
