@@ -66,6 +66,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("9a83ff251b3e78e74a8ae6005253ef6e40577a8f89381eed325c4bc98c8c65ed" default)))
  '(git-gutter:update-interval 2)
  '(package-selected-packages
    (quote
@@ -145,10 +148,13 @@
 (add-hook 'prog-mode-hook 'company-mode)
 
 (add-to-list 'load-path "~/.emacs.d/elisp/theme-changer")
-;; (load "~/.emacs.d/elisp/theme-changer/theme-changer.el")
 ;; 4.34:-74.4
 (setq calendar-latitude 4.34)
 (setq calendar-longitude -74.4)
 
+(load "~/.emacs.d/elisp/weyland-yutani-theme/weyland-yutani-theme.el")
+(load "~/.emacs.d/elisp/magonyx-theme.el")
+
 (require 'theme-changer)
-(change-theme 'whiteboard 'wombat)
+(change-theme 'magonyx 'weyland-yutani)
+
