@@ -159,3 +159,5 @@
 
 (require 'theme-changer)
 (change-theme 'magonyx 'weyland-yutani)
+
+(setq inhibit-startup-screen t)

@@ -40,7 +40,7 @@
        (builtin "#cbb021")
        (keyword "#9ec065")
        (const   "#eca661")
-       (comment "#5d5d5d")
+       (comment "#8d8d8d")
        (func    "#75b7ff")
        (str     "#5ba2b1")
        (type    "#ff909d")
