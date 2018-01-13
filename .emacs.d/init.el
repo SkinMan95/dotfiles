@@ -58,7 +58,7 @@
 
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/"))
+             '("melpa" . "https://melpa.org/packages/"))
 
 (package-initialize)
 (custom-set-variables
@@ -72,7 +72,8 @@
  '(git-gutter:update-interval 2)
  '(package-selected-packages
    (quote
-    (company rainbow-mode git-gutter multiple-cursors markdown-mode))))
+    (jdee company rainbow-mode git-gutter multiple-cursors markdown-mode)))
+ '(jdee-server-dir "~/.emacs.d/jdee-server/target"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
