@@ -137,8 +137,8 @@
 (global-git-gutter-mode +1)
 
 ;; Activa Rainbow mode para colores hexadecimales (o por nombre)
-(rainbow-mode)
-(company-mode)
+;; (rainbow-mode)
+;; (company-mode)
 
 (defun hilite-todos ()
   (highlight-lines-matching-regexp "\\<\\(FIXME\\|TODO\\|XXX\\):?" 
