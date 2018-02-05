@@ -306,6 +306,7 @@ exec --no-startup-id redshift-gtk -l 4.34:-74.4
 exec --no-startup-id conky
 exec --no-startup-id variety
 exec --no-startup-id dropbox
+exec --no-startup-id /home/skinman95/.screenlayout/two-monitor.sh
 # exec --no-startup-id skype
 exec --no-startup-id spotify
 #exec --no-startup-id volumeicon
@@ -320,8 +321,8 @@ exec --no-startup-id xautolock -locker ~/.config/i3/lock-screen.sh -detectsleep
 
 for_window [class="Spotify"] move to workspace $workspace10
 assign [class = "Blockify"] $workspace10
-for_window [title="Priority • Nozbe"] move to workspace $workspace9, floating enable, resize set 843 702, move absolute position 14 48
-for_window [title="Inbox • Nozbe"] move to workspace $workspace9, floating enable, resize set 843 702, move absolute position 14 48
+# for_window [title="Priority • Nozbe"] move to workspace $workspace9, floating enable, resize set 843 702, move absolute position 14 48
+# for_window [title="Inbox • Nozbe"] move to workspace $workspace9, floating enable, resize set 843 702, move absolute position 14 48
 for_window [class="Alarm-clock-applet"] floating enable, resize set 492 399, move absolute position 220 181
 assign [class="google-chrome"] $workspace1
 assign [class="Transmission-gtk"] $workspace8
