@@ -83,7 +83,7 @@ ${color2}file systems:
 $hr
 ${color2}networking:
 ${color2}wlp8s0: down:$color ${downspeedf wlp8s0} KiB ${color2} - up:$color ${upspeedf wlp8s0} KiB
-${color2}enp1s0: down:$color ${downspeedf enp1s0} KiB ${color2} - up:$color ${upspeedf enp1s0} KiB
+${color2}enp9s0: down:$color ${downspeedf enp9s0} KiB ${color2} - up:$color ${upspeedf enp9s0} KiB
 ${color3}${downspeedgraph wlp8s0 25,220}${color2}${upspeedgraph wlp8s0 25,220}
 $hr
 ${color2}name                pid   cpu%   mem%
