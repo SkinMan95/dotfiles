@@ -70,10 +70,10 @@
    (quote
     ("9a83ff251b3e78e74a8ae6005253ef6e40577a8f89381eed325c4bc98c8c65ed" default)))
  '(git-gutter:update-interval 2)
+ '(jdee-server-dir "~/.emacs.d/jdee-server/target")
  '(package-selected-packages
    (quote
-    (jdee company rainbow-mode git-gutter multiple-cursors markdown-mode)))
- '(jdee-server-dir "~/.emacs.d/jdee-server/target"))
+    (expand-region jdee company rainbow-mode git-gutter multiple-cursors markdown-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -242,3 +242,7 @@
 
 (global-set-key (kbd "M-p") 'move-line-region-up)
 (global-set-key (kbd "M-n") 'move-line-region-down)
+
+;; expand region
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
