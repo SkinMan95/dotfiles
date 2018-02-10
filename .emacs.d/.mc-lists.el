@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	markdown-outdent-or-delete
 	sgml-slash
 	))
 
