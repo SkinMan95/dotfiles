@@ -33,7 +33,7 @@ draw_graph_borders yes
 draw_outline no
 draw_shades no
 use_xft yes
-xftfont DejaVu Sans Mono:size=12
+xftfont Inconsolata:size=13
 gap_x 50
 gap_y 50
 minimum_size 5 5
@@ -65,27 +65,27 @@ ${color2}ram usage:  $color $mem/$memmax - $memperc% ${membar 4}
 ${color2}swap usage: $color $swap/$swapmax - $swapperc% ${swapbar 4}
 ${color2}load:       $color ${loadavg 1}/${loadavg 2}/${loadavg 3}
 ${color2}processes:  $color $processes  ${color2}running:$color $running_processes
-${color2}core 0:$color ${cpu cpu0}% ${cpubar cpu0}
-${color2}core 1:$color ${cpu cpu1}% ${cpubar cpu1}
-${color2}core 2:$color ${cpu cpu2}% ${cpubar cpu2}
-${color2}core 3:$color ${cpu cpu3}% ${cpubar cpu3}
-${color2}core 4:$color ${cpu cpu4}% ${cpubar cpu4}
-${color2}core 5:$color ${cpu cpu5}% ${cpubar cpu5}
-${color2}core 6:$color ${cpu cpu6}% ${cpubar cpu6}
-${color2}core 7:$color ${cpu cpu7}% ${cpubar cpu7}
-$hr
+${color2}core 0:     $color ${cpu cpu0}% ${cpubar cpu0}
+${color2}core 1:     $color ${cpu cpu1}% ${cpubar cpu1}
+${color2}core 2:     $color ${cpu cpu2}% ${cpubar cpu2}
+${color2}core 3:     $color ${cpu cpu3}% ${cpubar cpu3}
+${color2}core 4:     $color ${cpu cpu4}% ${cpubar cpu4}
+${color2}core 5:     $color ${cpu cpu5}% ${cpubar cpu5}
+${color2}core 6:     $color ${cpu cpu6}% ${cpubar cpu6}
+${color2}core 7:     $color ${cpu cpu7}% ${cpubar cpu7}
+${color2}$hr
 ${color2}file systems:
- /        $color${fs_used /}/${fs_size /} ${fs_bar 6 /} ${color2}
- /home    $color${fs_used /home}/${fs_size /home} ${fs_bar 6 /home} ${color2}
- Ubuntu   $color${fs_used /mnt/homedsk}/${fs_size /mnt/homedsk} ${fs_bar 6 /mnt/homedsk} ${color2}
- Windows  $color${fs_used /mnt/DE56FA2156F9F9DB}/${fs_size /mnt/DE56FA2156F9F9DB} ${fs_bar 6 /mnt/DE56FA2156F9F9DB} ${color2}
- /tmp     $color${fs_used /tmp}/${fs_size /tmp} ${fs_bar 6 /tmp}
-$hr
+ /           $color${fs_used /}/${fs_size /} ${fs_bar 6 /} ${color2}
+ /home       $color${fs_used /home}/${fs_size /home} ${fs_bar 6 /home} ${color2}
+ Ubuntu      $color${fs_used /mnt/homedsk}/${fs_size /mnt/homedsk} ${fs_bar 6 /mnt/homedsk} ${color2}
+ Windows     $color${fs_used /mnt/DE56FA2156F9F9DB}/${fs_size /mnt/DE56FA2156F9F9DB} ${fs_bar 6 /mnt/DE56FA2156F9F9DB} ${color2}
+ /tmp        $color${fs_used /tmp}/${fs_size /tmp} ${fs_bar 6 /tmp}
+${color2}$hr
 ${color2}networking:
-${color2}wlp8s0: down:$color ${downspeedf wlp8s0} KiB ${color2} - up:$color ${upspeedf wlp8s0} KiB
-${color2}enp9s0: down:$color ${downspeedf enp9s0} KiB ${color2} - up:$color ${upspeedf enp9s0} KiB
+${color2}wlp8s0 -  down:$color ${downspeedf wlp8s0} KiB ${color2} - up:$color ${upspeedf wlp8s0} KiB
+${color2}enp9s0 -  down:$color ${downspeedf enp9s0} KiB ${color2} - up:$color ${upspeedf enp9s0} KiB
 ${color3}${downspeedgraph wlp8s0 25,220}${color2}${upspeedgraph wlp8s0 25,220}
-$hr
+${color2}$hr
 ${color2}name                pid   cpu%   mem%
 ${color} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
 ${color} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
@@ -95,12 +95,12 @@ ${color} ${top name 5} ${top pid 5} ${top cpu 5} ${top mem 5}
 ${color} ${top name 6} ${top pid 6} ${top cpu 6} ${top mem 6}
 ${color} ${top name 7} ${top pid 7} ${top cpu 7} ${top mem 7}
 ${color} ${top name 8} ${top pid 8} ${top cpu 8} ${top mem 8}
-$hr
+${color2}$hr
 ${color2} disk read:  ${color} ${diskio_read}
 ${color2} disk write: ${color} ${diskio_write}
 ${color2} syshd io:   ${color} ${diskio /dev/sda}
 ${color2} ${diskiograph}
-$hr
+${color2}$hr
 ${color2}wireless ipv4:${color} ${addr wlp8s0}
 ${color2}         ipv6:${color} ${v6addrs wlp8s0}
 ${color2}essid: ${color}${wireless_essid} ${color2}mac: ${color}${wireless_ap wlp8s0}
