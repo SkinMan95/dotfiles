@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "beanshell" "beanshell.el" (23130 25462 102925
-;;;;;;  973000))
+;;;### (autoloads nil "beanshell" "beanshell.el" (23183 1133 924384
+;;;;;;  382000))
 ;;; Generated autoloads from beanshell.el
 
 (autoload 'bsh-script-help "beanshell" "\
@@ -14,7 +14,7 @@ Display BeanShell User's Guide.
 
 ;;;***
 
-;;;### (autoloads nil "jdee" "jdee.el" (23130 25461 172886 778000))
+;;;### (autoloads nil "jdee" "jdee.el" (23183 1130 962345 47000))
 ;;; Generated autoloads from jdee.el
 
 (defconst jdee-version "2.4.2" "\
@@ -41,8 +41,8 @@ Major mode for developing Java applications.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-ant" "jdee-ant.el" (23130 25462 2921
-;;;;;;  778000))
+;;;### (autoloads nil "jdee-ant" "jdee-ant.el" (23183 1133 519379
+;;;;;;  5000))
 ;;; Generated autoloads from jdee-ant.el
 
 (autoload 'jdee-ant-build "jdee-ant" "\
@@ -66,8 +66,8 @@ Show the JDE Ant Options panel.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-archive" "jdee-archive.el" (23130 25461
-;;;;;;  969587 39000))
+;;;### (autoloads nil "jdee-archive" "jdee-archive.el" (23183 1133
+;;;;;;  451378 102000))
 ;;; Generated autoloads from jdee-archive.el
 
 (autoload 'jdee-archive-which "jdee-archive" "\
@@ -83,8 +83,8 @@ Return:
 
 ;;;***
 
-;;;### (autoloads nil "jdee-bookmark" "jdee-bookmark.el" (23130 25461
-;;;;;;  792912 922000))
+;;;### (autoloads nil "jdee-bookmark" "jdee-bookmark.el" (23183 1132
+;;;;;;  854370 174000))
 ;;; Generated autoloads from jdee-bookmark.el
 
 (autoload 'jdee-bookmark-visit "jdee-bookmark" "\
@@ -104,8 +104,8 @@ List bookmarks.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-bsh" "jdee-bsh.el" (23130 25461 592904
-;;;;;;  489000))
+;;;### (autoloads nil "jdee-bsh" "jdee-bsh.el" (23183 1132 54359
+;;;;;;  550000))
 ;;; Generated autoloads from jdee-bsh.el
 
 (autoload 'jdee-jeval "jdee-bsh" "\
@@ -145,8 +145,8 @@ NO-QUOTE-WRAP-P, if non-nil, don't add double quotes around the whole statement.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-bug" "jdee-bug.el" (23130 25461 436231
-;;;;;;  215000))
+;;;### (autoloads nil "jdee-bug" "jdee-bug.el" (23183 1131 751355
+;;;;;;  526000))
 ;;; Generated autoloads from jdee-bug.el
 
 (autoload 'jdee-bug-minor-mode "jdee-bug" "\
@@ -165,8 +165,8 @@ Runs the debugger on the application in the current source buffer.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-checkstyle" "jdee-checkstyle.el" (23130
-;;;;;;  25461 469565 954000))
+;;;### (autoloads nil "jdee-checkstyle" "jdee-checkstyle.el" (23183
+;;;;;;  1131 862357 0))
 ;;; Generated autoloads from jdee-checkstyle.el
 
 (autoload 'jdee-checkstyle-customize "jdee-checkstyle" "\
@@ -187,8 +187,8 @@ history enabled.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-classpath" "jdee-classpath.el" (23130
-;;;;;;  25462 129593 758000))
+;;;### (autoloads nil "jdee-classpath" "jdee-classpath.el" (23183
+;;;;;;  1134 83386 493000))
 ;;; Generated autoloads from jdee-classpath.el
 
 (autoload 'jdee-set-global-classpath "jdee-classpath" "\
@@ -199,8 +199,8 @@ It specifies the -classpath argument for the Java compiler and interpreter.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-compile" "jdee-compile.el" (23130 25461
-;;;;;;  236222 782000))
+;;;### (autoloads nil "jdee-compile" "jdee-compile.el" (23183 1131
+;;;;;;  203348 248000))
 ;;; Generated autoloads from jdee-compile.el
 
 (autoload 'jdee-set-compile-options "jdee-compile" "\
@@ -225,8 +225,8 @@ uses the compiler executable specified by `jdee-compiler' to compile.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-custom" "jdee-custom.el" (23130 25461
-;;;;;;  486233 324000))
+;;;### (autoloads nil "jdee-custom" "jdee-custom.el" (23183 1131
+;;;;;;  893357 412000))
 ;;; Generated autoloads from jdee-custom.el
 
 (defalias 'jdee-customize-variable 'jdee-customize-option)
@@ -238,8 +238,7 @@ Customize SYMBOL, which must be a JDEE option variable.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-db" "jdee-db.el" (23130 25461 292891
-;;;;;;  838000))
+;;;### (autoloads nil "jdee-db" "jdee-db.el" (23183 1131 338350 41000))
 ;;; Generated autoloads from jdee-db.el
 
 (autoload 'jdee-db-set-args "jdee-db" "\
@@ -280,8 +279,8 @@ file in the current buffer.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-ejb" "jdee-ejb.el" (23130 25461 649573
-;;;;;;  545000))
+;;;### (autoloads nil "jdee-ejb" "jdee-ejb.el" (23183 1132 330363
+;;;;;;  215000))
 ;;; Generated autoloads from jdee-ejb.el
 
 (autoload 'jdee-ejb-session-bean-buffer "jdee-ejb" "\
@@ -304,8 +303,8 @@ to the EJB naming convention.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-find" "jdee-find.el" (23130 25461 822914
-;;;;;;  188000))
+;;;### (autoloads nil "jdee-find" "jdee-find.el" (23183 1132 945371
+;;;;;;  382000))
 ;;; Generated autoloads from jdee-find.el
 
 (autoload 'jdee-find "jdee-find" "\
@@ -336,8 +335,8 @@ minibuffer.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-flycheck" "jdee-flycheck.el" (23130 25461
-;;;;;;  722909 971000))
+;;;### (autoloads nil "jdee-flycheck" "jdee-flycheck.el" (23183 1132
+;;;;;;  668367 704000))
 ;;; Generated autoloads from jdee-flycheck.el
 
 (autoload 'jdee-flycheck-mode "jdee-flycheck" "\
@@ -347,8 +346,8 @@ Setup JDEE flycheck checker.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-font-lock" "jdee-font-lock.el" (23130
-;;;;;;  25461 639573 123000))
+;;;### (autoloads nil "jdee-font-lock" "jdee-font-lock.el" (23183
+;;;;;;  1132 257362 246000))
 ;;; Generated autoloads from jdee-font-lock.el
 
 (autoload 'jdee-font-lock-setup-keywords "jdee-font-lock" "\
@@ -360,8 +359,7 @@ expressions.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-gen" "jdee-gen.el" (23130 25461 836248
-;;;;;;  83000))
+;;;### (autoloads nil "jdee-gen" "jdee-gen.el" (23183 1133 372 113000))
 ;;; Generated autoloads from jdee-gen.el
 
 (autoload 'jdee-gen-class-buffer "jdee-gen" "\
@@ -542,8 +540,8 @@ It then moves the point to the location of the first method.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-help" "jdee-help.el" (23130 25461 932918
-;;;;;;  826000))
+;;;### (autoloads nil "jdee-help" "jdee-help.el" (23183 1133 380377
+;;;;;;  159000))
 ;;; Generated autoloads from jdee-help.el
 
 (autoload 'jdee-help-browse-jdk-doc "jdee-help" "\
@@ -558,8 +556,8 @@ Opens the JDEE User's Guide info pages.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-import" "jdee-import.el" (23130 25461
-;;;;;;  422897 320000))
+;;;### (autoloads nil "jdee-import" "jdee-import.el" (23183 1131
+;;;;;;  664354 371000))
 ;;; Generated autoloads from jdee-import.el
 
 (autoload 'jdee-import-organize "jdee-import" "\
@@ -592,7 +590,7 @@ The fully qualified class is received from user input.
 ;;;***
 
 ;;;### (autoloads nil "jdee-java-properties" "jdee-java-properties.el"
-;;;;;;  (23130 25462 12922 199000))
+;;;;;;  (23183 1133 550379 416000))
 ;;; Generated autoloads from jdee-java-properties.el
 
 (autoload 'jdee-java-properties-mode "jdee-java-properties" "\
@@ -611,8 +609,8 @@ found.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-javadoc" "jdee-javadoc.el" (23130 25461
-;;;;;;  959586 617000))
+;;;### (autoloads nil "jdee-javadoc" "jdee-javadoc.el" (23183 1133
+;;;;;;  428377 796000))
 ;;; Generated autoloads from jdee-javadoc.el
 
 (autoload 'jdee-javadoc-checker-previous "jdee-javadoc" "\
@@ -785,8 +783,8 @@ definition.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-javadoc-gen" "jdee-javadoc-gen.el" (23130
-;;;;;;  25461 626239 228000))
+;;;### (autoloads nil "jdee-javadoc-gen" "jdee-javadoc-gen.el" (23183
+;;;;;;  1132 201361 502000))
 ;;; Generated autoloads from jdee-javadoc-gen.el
 
 (autoload 'jdee-javadoc-make-internal "jdee-javadoc-gen" "\
@@ -843,8 +841,8 @@ browser.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-junit" "jdee-junit.el" (23130 25461 852915
-;;;;;;  453000))
+;;;### (autoloads nil "jdee-junit" "jdee-junit.el" (23183 1133 66372
+;;;;;;  989000))
 ;;; Generated autoloads from jdee-junit.el
 
 (autoload 'jdee-junit-test-class "jdee-junit" "\
@@ -890,8 +888,8 @@ Show the JDEE JUnit Options panel.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-make" "jdee-make.el" (23130 25461 769578
-;;;;;;  605000))
+;;;### (autoloads nil "jdee-make" "jdee-make.el" (23183 1132 769369
+;;;;;;  46000))
 ;;; Generated autoloads from jdee-make.el
 
 (autoload 'jdee-make "jdee-make" "\
@@ -911,8 +909,8 @@ Show the JDEE Make Options panel.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-maven" "jdee-maven.el" (23130 25461 606238
-;;;;;;  384000))
+;;;### (autoloads nil "jdee-maven" "jdee-maven.el" (23183 1132 105360
+;;;;;;  228000))
 ;;; Generated autoloads from jdee-maven.el
 
 (autoload 'jdee-maven-build "jdee-maven" "\
@@ -931,8 +929,8 @@ local and then run the functions in `jdee-maven-mode-hook'.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-open-source" "jdee-open-source.el" (23130
-;;;;;;  25462 116259 865000))
+;;;### (autoloads nil "jdee-open-source" "jdee-open-source.el" (23183
+;;;;;;  1134 6385 471000))
 ;;; Generated autoloads from jdee-open-source.el
 
 (autoload 'jdee-read-class "jdee-open-source" "\
@@ -980,8 +978,8 @@ If it finds the source file, it opens the file in a buffer.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-package" "jdee-package.el" (23130 25461
-;;;;;;  249556 678000))
+;;;### (autoloads nil "jdee-package" "jdee-package.el" (23183 1131
+;;;;;;  234348 660000))
 ;;; Generated autoloads from jdee-package.el
 
 (autoload 'jdee-package-update "jdee-package" "\
@@ -997,8 +995,8 @@ this command does nothing. This command signals an error if the
 
 ;;;***
 
-;;;### (autoloads nil "jdee-parse" "jdee-parse.el" (23130 25461 219555
-;;;;;;  412000))
+;;;### (autoloads nil "jdee-parse" "jdee-parse.el" (23183 1131 145347
+;;;;;;  478000))
 ;;; Generated autoloads from jdee-parse.el
 
 (autoload 'jdee-parse-get-buffer-class "jdee-parse" "\
@@ -1013,8 +1011,8 @@ If called interactively, add the name in the mini-buffer.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-parse-expr" "jdee-parse-expr.el" (23130
-;;;;;;  25461 556236 276000))
+;;;### (autoloads nil "jdee-parse-expr" "jdee-parse-expr.el" (23183
+;;;;;;  1131 976358 514000))
 ;;; Generated autoloads from jdee-parse-expr.el
 
 (autoload 'jdee-hungarian-to-reverse-camel-notation "jdee-parse-expr" "\
@@ -1058,8 +1056,8 @@ setter, otherwise, make a getter.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-project" "jdee-project.el" (23130 25461
-;;;;;;  149552 461000))
+;;;### (autoloads nil "jdee-project" "jdee-project.el" (23183 1130
+;;;;;;  904344 277000))
 ;;; Generated autoloads from jdee-project.el
 
 (autoload 'jdee-project-create-project "jdee-project" "\
@@ -1077,7 +1075,7 @@ PATH-TYPE is either `global classpath' for `jdee-global-classpath' or
 ;;;***
 
 ;;;### (autoloads nil "jdee-project-file" "jdee-project-file.el"
-;;;;;;  (23130 25461 516234 589000))
+;;;;;;  (23183 1131 941358 50000))
 ;;; Generated autoloads from jdee-project-file.el
 
 (autoload 'jdee-open-project-file "jdee-project-file" "\
@@ -1110,8 +1108,8 @@ hierarchical projects.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-refactor" "jdee-refactor.el" (23130 25461
-;;;;;;  946252 722000))
+;;;### (autoloads nil "jdee-refactor" "jdee-refactor.el" (23183 1133
+;;;;;;  404377 478000))
 ;;; Generated autoloads from jdee-refactor.el
 
 (autoload 'jdee-rename-class "jdee-refactor" "\
@@ -1128,8 +1126,8 @@ class.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-run" "jdee-run.el" (23130 25461 662907
-;;;;;;  440000))
+;;;### (autoloads nil "jdee-run" "jdee-run.el" (23183 1132 396364
+;;;;;;  92000))
 ;;; Generated autoloads from jdee-run.el
 
 (autoload 'jdee-run-set-app "jdee-run" "\
@@ -1202,8 +1200,8 @@ file.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-stat" "jdee-stat.el" (23130 25461 206221
-;;;;;;  517000))
+;;;### (autoloads nil "jdee-stat" "jdee-stat.el" (23183 1131 94346
+;;;;;;  801000))
 ;;; Generated autoloads from jdee-stat.el
 
 (autoload 'jdee-stat-loc-report "jdee-stat" "\
@@ -1232,8 +1230,8 @@ contained in dir.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-test" "jdee-test.el" (23130 25461 992921
-;;;;;;  356000))
+;;;### (autoloads nil "jdee-test" "jdee-test.el" (23183 1133 485378
+;;;;;;  553000))
 ;;; Generated autoloads from jdee-test.el
 
 (autoload 'jdee-test-unittest "jdee-test" "\
@@ -1243,8 +1241,8 @@ Perform unit test.  Delegates to the function specified by `jdee-test-function'.
 
 ;;;***
 
-;;;### (autoloads nil "jdee-util" "jdee-util.el" (23130 25461 72882
-;;;;;;  561000))
+;;;### (autoloads nil "jdee-util" "jdee-util.el" (23183 1130 816343
+;;;;;;  108000))
 ;;; Generated autoloads from jdee-util.el
 
 (autoload 'jdee-require "jdee-util" "\
@@ -1275,7 +1273,7 @@ See `jdee-htmlize-code-destinations'.
 ;;;***
 
 ;;;### (autoloads nil "jdee-which-method" "jdee-which-method.el"
-;;;;;;  (23130 25462 59590 822000))
+;;;;;;  (23183 1133 692381 302000))
 ;;; Generated autoloads from jdee-which-method.el
 
 (defvar jdee-which-method-mode t "\
@@ -1287,8 +1285,8 @@ displayed in the mode line.")
 
 ;;;***
 
-;;;### (autoloads nil "jdee-xref" "jdee-xref.el" (23130 25462 49590
-;;;;;;  403000))
+;;;### (autoloads nil "jdee-xref" "jdee-xref.el" (23183 1133 647380
+;;;;;;  704000))
 ;;; Generated autoloads from jdee-xref.el
 
 (autoload 'jdee-xref-make-xref-db "jdee-xref" "\
@@ -1361,7 +1359,7 @@ Display the customization buffer for the xref package.
 ;;;;;;  "jdee-files.el" "jdee-imenu.el" "jdee-issues.el" "jdee-java-grammar.el"
 ;;;;;;  "jdee-jdb.el" "jdee-jdk-manager.el" "jdee-juci.el" "jdee-keys.el"
 ;;;;;;  "jdee-log.el" "jdee-pkg.el" "jdee-plugins.el" "jdee-stacktrace.el"
-;;;;;;  "jdee-widgets.el" "jdee-wiz.el") (23130 25462 139594 177000))
+;;;;;;  "jdee-widgets.el" "jdee-wiz.el") (23183 1134 170387 648000))
 
 ;;;***
 

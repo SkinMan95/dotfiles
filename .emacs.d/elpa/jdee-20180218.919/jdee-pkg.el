@@ -1,4 +1,4 @@
-(define-package "jdee" "20180109.1233" "Java Development Environment for Emacs"
+(define-package "jdee" "20180218.919" "Java Development Environment for Emacs"
   '((emacs "24.3")
     (flycheck "30")
     (memoize "1.0.1")

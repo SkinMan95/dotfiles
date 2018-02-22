@@ -1,20 +1,3 @@
-cat 3.listfile 
-ls
-cd ..
-ls
-tree
-pfccomp 3.p 3.objfile 3.listfile
-cd punto3/
-pfccomp 3.p 3.objfile 3.listfile
-ll
-ls -l
-pfccomp 3.p 3.listname 3.objfile 
-pfccomp 3.p 3.listfile 3.objfile 
-pfccomp 3.p 3.listfile 3.objfile 
-pfccomp 3.p 3.listfile 3.objfile 
-pfccomp 3.p 3.listfile 3.objfile 
-cat 3.listfile
-pfccomp 3.p 3.listfile 3.objfile 
 cat 3.listfile
 cd ..
 ls
@@ -126,3 +109,20 @@ cat test*
 sh ./gen_script.sh 14
 sh ./check_sol.sh 
 python
+g++ prueba.cpp 
+./a.out 
+clear
+
+reset
+g++ prueba.cpp 
+./a.out 
+g++ prueba.cpp 
+./a.out 
+g++ prueba.cpp 
+./a.out 
+g++ prueba.cpp 
+./a.out 
+g++ prueba.cpp 
+./a.out 
+g++ prueba.cpp 
+./a.out 

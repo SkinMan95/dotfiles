@@ -1,0 +1,6 @@
+[submodule ".emacs.d/plugins/js2-refactor.el"]
+	path = .emacs.d/plugins/js2-refactor.el
+	url = https://github.com/magnars/js2-refactor.el
+[submodule ".emacs.d/plugins/yasnippet"]
+	path = .emacs.d/plugins/yasnippet
+	url = https://github.com/capitaomorte/yasnippet

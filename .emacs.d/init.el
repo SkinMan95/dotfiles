@@ -73,7 +73,7 @@
  '(jdee-server-dir "~/.emacs.d/jdee-server/target")
  '(package-selected-packages
    (quote
-    (expand-region jdee company rainbow-mode git-gutter multiple-cursors markdown-mode))))
+    (js2-refactor ac-js2 js2-mode expand-region jdee company rainbow-mode git-gutter multiple-cursors markdown-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -247,3 +247,21 @@
 ;; expand region
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
+
+
+;; yasnippet
+(add-to-list 'load-path
+              "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
+
+;; js2-mode - A better js mode for Emacs
+(add-hook 'js-mode-hook 'js2-minor-mode)
+(add-hook 'js2-mode-hook 'ac-js2-mode)
+(setq js2-highlight-level 3)
+
+;; js2-refactor
+(add-to-list 'load-path
+              "~/.emacs.d/plugins/js2-refactor.el")
+(require 'js2-refactor)
+(add-hook 'js2-mode-hook 'js2-refactor-mode)
