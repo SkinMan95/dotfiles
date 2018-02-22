@@ -108,6 +108,7 @@
 
 (load "~/.emacs.d/maude-mode2.el")
 (require 'maude-mode)
+(add-to-list 'auto-mode-alist '("\\.maude\\'" . maude-mode))
 
 ;; (global-set-key "\M-c" "\C-a\C- \C-n\M-w\C-y")
 (defun duplicate-line()
