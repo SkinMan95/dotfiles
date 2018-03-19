@@ -121,14 +121,14 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 set $workspace1 "1: "
-set $workspace2 "2: "
-set $workspace3 "3: "
+set $workspace2 "2"
+set $workspace3 "3"
 set $workspace4 "4"
 set $workspace5 "5"
-set $workspace6 "6: "
+set $workspace6 "6: "
 set $workspace7 "7: "
 set $workspace8 "8: "
-set $workspace9 "9: "
+set $workspace9 "9"
 set $workspace10 "10: "
 set $workspace11 "11"
 set $workspace12 "12"
@@ -241,7 +241,7 @@ bar {
 	#status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	status_command bumblebee-status -m spotify sensors cpu memory nic traffic amixer battery datetime -p amixer.left-click="pavucontrol" nic.states=up nic.exclude=vmnet8,vmnet1,lo,docker0 traffic.states=up traffic.exclude=vmnet8,vmnet1,lo,docker0 datetime.format="%Y-%m-%d %H:%M:%S" -t default
 	# position down
-	#font xft:Inconsolate 9
+	# font pango:Inconsolate 8
 	font pango:Inconsolata 8, FontAwesome 8
         strip_workspace_numbers no
         #bindsym button4 nop
@@ -300,6 +300,11 @@ bindsym $mod+p exec --no-startup-id ~/.config/i3/spotify-control.sh next
 bindsym $mod+u exec --no-startup-id emacs
 bindsym $mod+Shift+u exec --no-startup-id termite -e "emacs -nw"
 
+# monitor layout
+bindsym $mod+g exec --no-startup-id ~/.screenlayout/one-monitor.sh
+bindsym $mod+Shift+g exec --no-startup-id ~/.screenlayout/two-monitor.sh
+
+
 #background apps
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk -l 4.34:-74.4
@@ -307,6 +312,7 @@ exec --no-startup-id conky
 exec --no-startup-id variety
 exec --no-startup-id dropbox
 exec --no-startup-id /home/skinman95/.screenlayout/two-monitor.sh
+exec --no-startup-id sudo cpupower frequency-set -g powersave
 # exec --no-startup-id skype
 exec --no-startup-id spotify
 #exec --no-startup-id volumeicon
@@ -317,7 +323,8 @@ exec --no-startup-id "devmon --no-gui"
 exec --no-startup-id dunst
 exec --no-startup-id compton --config ~/.config/compton.conf -b
 exec --no-startup-id ~/.config/i3/touch-screen-disable.sh
-exec --no-startup-id xautolock -locker ~/.config/i3/lock-screen.sh -detectsleep
+exec --no-startup-id xautolock -locker ~/.config/i3/lock-screen.sh -detectsleep -time 15 -notify 15
+exec --no-startup-id xset s off; xset -dpms
 
 for_window [class="Spotify"] move to workspace $workspace10
 assign [class = "Blockify"] $workspace10
@@ -331,3 +338,5 @@ assign [class="Skype"] $workspace7
 
 for_window [class="URxvt"] border pixel 2
 for_window [class="Termite"] border pixel 2
+
+# move workspace $workspace10 to output left

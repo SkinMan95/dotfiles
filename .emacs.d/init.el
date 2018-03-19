@@ -132,8 +132,8 @@
 ;; (setq redisplay-dont-pause f)
 
 ;; set transparency
-(set-frame-parameter (selected-frame) 'alpha '(97 97))
-(add-to-list 'default-frame-alist '(alpha 97 97))
+(set-frame-parameter (selected-frame) 'alpha '(87 87))
+(add-to-list 'default-frame-alist '(alpha 87 87))
 
 ;; Git Gutter = changed lines highlighter
 (global-git-gutter-mode +1)
@@ -159,9 +159,10 @@
 
 (load "~/.emacs.d/elisp/weyland-yutani-theme/weyland-yutani-theme.el")
 (load "~/.emacs.d/elisp/magonyx-theme.el")
+(load "~/.emacs.d/elisp/white-sand-theme.el")
 
 (require 'theme-changer)
-(change-theme 'magonyx 'weyland-yutani)
+(change-theme 'white-sand 'weyland-yutani)
 
 (setq inhibit-startup-screen t)
 
