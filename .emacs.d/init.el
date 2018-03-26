@@ -1,3 +1,26 @@
+(package-initialize)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("9a83ff251b3e78e74a8ae6005253ef6e40577a8f89381eed325c4bc98c8c65ed" default)))
+ '(git-gutter:update-interval 2)
+ '(jdee-server-dir "~/.emacs.d/jdee-server/target")
+ '(package-selected-packages
+   (quote
+    (benchmark-init smartparens flycheck js2-refactor ac-js2 js2-mode expand-region jdee company rainbow-mode git-gutter multiple-cursors markdown-mode))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; (benchmark-init/activate)
+
 (setq c-default-style "linux"
       c-basic-offset 4)
 
@@ -34,7 +57,7 @@
 ;; (load-theme 'wombat)
 
  ;; (set-default-font 'Terminus-9)
-(set-default-font "Inconsolata-12")
+(set-frame-font "Inconsolata-12")
 
 (winner-mode)
 (global-set-key [f9] 'delete-other-windows)
@@ -61,26 +84,7 @@
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
 
-(package-initialize)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("9a83ff251b3e78e74a8ae6005253ef6e40577a8f89381eed325c4bc98c8c65ed" default)))
- '(git-gutter:update-interval 2)
- '(jdee-server-dir "~/.emacs.d/jdee-server/target")
- '(package-selected-packages
-   (quote
-    (smartparens flycheck js2-refactor ac-js2 js2-mode expand-region jdee company rainbow-mode git-gutter multiple-cursors markdown-mode))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
 
 (windmove-default-keybindings)
 
@@ -233,19 +237,19 @@
 ;; yasnippet
 (add-to-list 'load-path
               "~/.emacs.d/plugins/yasnippet")
-(require 'yasnippet)
-(yas-global-mode 1)
+;; (require 'yasnippet)
+;; (yas-global-mode 0)
 
-;; js2-mode - A better js mode for Emacs
-(add-hook 'js-mode-hook 'js2-minor-mode)
-(add-hook 'js2-mode-hook 'ac-js2-mode)
-(setq js2-highlight-level 3)
+;; ;; js2-mode - A better js mode for Emacs
+;; (add-hook 'js-mode-hook 'js2-minor-mode)
+;; (add-hook 'js2-mode-hook 'ac-js2-mode)
+;; (setq js2-highlight-level 3)
 
-;; js2-refactor
-(add-to-list 'load-path
-              "~/.emacs.d/plugins/js2-refactor.el")
-(require 'js2-refactor)
-(add-hook 'js2-mode-hook 'js2-refactor-mode)
+;; ;; js2-refactor
+;; (add-to-list 'load-path
+;;               "~/.emacs.d/plugins/js2-refactor.el")
+;; (require 'js2-refactor)
+;; (add-hook 'js2-mode-hook 'js2-refactor-mode)
 
 ;; smartparens mode
 (require 'smartparens-config)
