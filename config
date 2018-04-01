@@ -303,6 +303,7 @@ bindsym $mod+Shift+u exec --no-startup-id termite -e "emacs -nw"
 # monitor layout
 bindsym $mod+g exec --no-startup-id ~/.screenlayout/one-monitor.sh
 bindsym $mod+Shift+g exec --no-startup-id ~/.screenlayout/two-monitor.sh
+bindsym $mod+Control+Shift+g exec --no-startup-id i3-msg move workspace to output left
 
 
 #background apps
