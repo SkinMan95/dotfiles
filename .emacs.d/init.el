@@ -237,19 +237,19 @@
 ;; yasnippet
 (add-to-list 'load-path
               "~/.emacs.d/plugins/yasnippet")
-;; (require 'yasnippet)
-;; (yas-global-mode 0)
+(require 'yasnippet)
+(yas-global-mode 0)
 
 ;; ;; js2-mode - A better js mode for Emacs
-;; (add-hook 'js-mode-hook 'js2-minor-mode)
-;; (add-hook 'js2-mode-hook 'ac-js2-mode)
-;; (setq js2-highlight-level 3)
+(add-hook 'js-mode-hook 'js2-minor-mode)
+(add-hook 'js2-mode-hook 'ac-js2-mode)
+(setq js2-highlight-level 3)
 
 ;; ;; js2-refactor
-;; (add-to-list 'load-path
-;;               "~/.emacs.d/plugins/js2-refactor.el")
-;; (require 'js2-refactor)
-;; (add-hook 'js2-mode-hook 'js2-refactor-mode)
+(add-to-list 'load-path
+              "~/.emacs.d/plugins/js2-refactor.el")
+(require 'js2-refactor)
+(add-hook 'js2-mode-hook 'js2-refactor-mode)
 
 ;; smartparens mode
 (require 'smartparens-config)

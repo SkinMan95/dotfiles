@@ -1,37 +1,3 @@
-cat 3.listfile
-cd ..
-ls
-mkdir password-format-to-pass
-cd password-format-to-pass/
-touch passwords-to-pass.py
-ls
-git status
-git diff
-exit
-cd Documents/
-ls
-mkdir TPRO
-cd TSOR/
-cd ..
-cd TPRO
-ls
-mkdir 'Primer Tercio'
-cd Primer\ Tercio/
-ls
-cd ..
-ls
-rm -rf Primer\ Tercio/
-mkdir Kaldewaij
-cd Kaldewaij/
-ls
-touch eje37-2.py
-python
-clear
-
-cd ..
-ls
-mdkir 'Parcial 1'
-mkdir 'Parcial 1'
 mv 2017-2-fmef-mt01.pdf Parcial\ 1/
 ls
 ls
@@ -126,3 +92,37 @@ g++ prueba.cpp
 ./a.out 
 g++ prueba.cpp 
 ./a.out 
+ls
+cd ..
+ls
+cd apache-servicemix-7.0.1/
+ls
+cp ../repositorio/blueprint.xml deploy/
+ls
+ls deploy/
+ls
+ls deploy/
+cd camel/
+ls
+cd input/
+ls
+cd ..
+ls
+ls -l
+cd input/
+touch prueba
+ls
+cd ..
+ls
+cd output/
+ls
+cd ..
+ls
+ls
+cd input/
+ls
+touch prueba2
+touch prueba3
+ls
+ls
+ls ../output/
