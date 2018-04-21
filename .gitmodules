@@ -7,3 +7,9 @@
 [submodule "y50-subwoofer-linux-enabler"]
 	path = y50-subwoofer-linux-enabler
 	url = https://github.com/dragosprju/y50-subwoofer-linux-enabler
+[submodule ".emacs.d/elisp/weyland-yutani-theme"]
+        path = ".emacs.d/elisp/weyland-yutani-theme"
+	url = https://github.com/jstaursky/weyland-yutani-theme.git	
+[submodule ".emacs.d/elisp/theme-changer"]
+	path = .emacs.d/elisp/theme-changer
+	url = https://github.com/hadronzoo/theme-changer.git
