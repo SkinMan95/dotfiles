@@ -7,9 +7,10 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="norm"
+ZSH_THEME=""
 DEFAULT_USER="skinman95"
 export EDITOR="emacs --no-desktop -nw"
+fpath=( "$HOME/.zfunctions" $fpath )
 
 # mkdir -p /tmp/google-chrome
 # mkdir -p /tmp/spotify-data
@@ -95,5 +96,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# ================ PURE ================
+autoload -U promptinit; promptinit
+PURE_CMD_MAX_EXEC_TIME=10
+prompt pure
 
 alias pwgen="pwgen -1cnsy"

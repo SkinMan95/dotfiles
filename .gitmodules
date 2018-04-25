@@ -13,3 +13,6 @@
 [submodule ".emacs.d/elisp/theme-changer"]
 	path = .emacs.d/elisp/theme-changer
 	url = https://github.com/hadronzoo/theme-changer.git
+[submodule "pure"]
+	path = pure
+	url = https://github.com/sindresorhus/pure.git
