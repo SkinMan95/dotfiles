@@ -101,5 +101,6 @@ source $ZSH/oh-my-zsh.sh
 autoload -U promptinit; promptinit
 PURE_CMD_MAX_EXEC_TIME=10
 prompt pure
+PROMPT='%(1j.[%j] .)%(?.%F{magenta}.%F{red})${PURE_PROMPT_SYMBOL:-❯}%f '
 
 alias pwgen="pwgen -1cnsy"
