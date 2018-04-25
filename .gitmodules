@@ -1,18 +1,9 @@
-[submodule ".emacs.d/plugins/js2-refactor.el"]
-	path = .emacs.d/plugins/js2-refactor.el
-	url = https://github.com/magnars/js2-refactor.el
-[submodule ".emacs.d/plugins/yasnippet"]
-	path = .emacs.d/plugins/yasnippet
-	url = https://github.com/capitaomorte/yasnippet
 [submodule "y50-subwoofer-linux-enabler"]
 	path = y50-subwoofer-linux-enabler
 	url = https://github.com/dragosprju/y50-subwoofer-linux-enabler
-[submodule ".emacs.d/elisp/weyland-yutani-theme"]
-        path = ".emacs.d/elisp/weyland-yutani-theme"
-	url = https://github.com/jstaursky/weyland-yutani-theme.git	
-[submodule ".emacs.d/elisp/theme-changer"]
-	path = .emacs.d/elisp/theme-changer
-	url = https://github.com/hadronzoo/theme-changer.git
 [submodule "pure"]
 	path = pure
 	url = https://github.com/sindresorhus/pure.git
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = https://github.com/SkinMan95/.emacs.d.git
