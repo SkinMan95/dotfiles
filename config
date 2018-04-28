@@ -246,6 +246,7 @@ bar {
         strip_workspace_numbers no
         #bindsym button4 nop
         #bindsym button5 nop
+	tray_output primary
         colors {
               separator $base03
               background $base01
