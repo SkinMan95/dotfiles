@@ -3,7 +3,7 @@
 	url = https://github.com/dragosprju/y50-subwoofer-linux-enabler
 [submodule "pure"]
 	path = pure
-	url = https://github.com/sindresorhus/pure.git
+	url = https://github.com/SkinMan95/pure.git
 [submodule ".emacs.d"]
 	path = .emacs.d
 	url = https://github.com/SkinMan95/.emacs.d.git
