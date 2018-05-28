@@ -279,10 +279,10 @@ bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset Master 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle ; exec /home/skinman95/Dropbox/pulseaudio_mute_toggle.sh > /dev/null
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 # decrease screen brightness
-bindsym Shift+XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2 # increase screen brightness
-bindsym Shift+XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/cbacklight --inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/cbacklight --dec 5 # decrease screen brightness
+bindsym Shift+XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/cbacklight --inc 2 # increase screen brightness
+bindsym Shift+XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/cbacklight --dec 2 # decrease screen brightness
 
 # extras
 bindsym XF86Calculator exec --no-startup-id gnome-calculator
@@ -313,7 +313,7 @@ exec --no-startup-id redshift-gtk -l 4.34:-74.4
 exec --no-startup-id conky
 exec --no-startup-id variety
 exec --no-startup-id dropbox
-exec --no-startup-id /home/skinman95/.screenlayout/two-monitor.sh
+# exec --no-startup-id /home/skinman95/.screenlayout/two-monitor.sh
 exec --no-startup-id sudo cpupower frequency-set -g powersave
 # exec --no-startup-id skype
 exec --no-startup-id spotify
