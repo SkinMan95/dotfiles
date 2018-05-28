@@ -6,6 +6,8 @@ mkdir -p /tmp/firefox-cache
 
 chown -R skinman95:skinman95 /tmp/google-chrome /tmp/spotify-data /tmp/firefox-cache
 
+chmod o+w /sys/class/backlight/intel_backlight/brightness
+
 # echo 1 | sudo tee /sys/module/snd_hda_intel/parameters/power_save
 # echo Y | sudo tee /sys/module/snd_hda_intel/parameters/power_save_controller
 
