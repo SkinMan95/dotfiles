@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export DISPLAY=:0.0
+
 while true; do
 xinput disable "$(xinput | python -c 'import io
 import sys
@@ -24,4 +26,5 @@ for line in lines:
 
 if res != None:
     print(res)
+    eprint("Chossen:", res)
 ')" && break || (notify-send -u critical "ERROR" "Fallo desactivar la pantalla tactil"; sleep 5); done
