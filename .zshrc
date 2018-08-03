@@ -9,7 +9,8 @@
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME=""
 DEFAULT_USER="skinman95"
-export EDITOR="emacs --no-desktop -nw"
+# export EDITOR="emacs --no-desktop -nw"
+export EDITOR="vim"
 fpath=( "$HOME/.zfunctions" $fpath )
 
 # mkdir -p /tmp/google-chrome
