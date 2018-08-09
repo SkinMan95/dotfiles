@@ -299,7 +299,8 @@ bindsym $mod+p exec --no-startup-id ~/.config/i3/spotify-control.sh next
 
 # emacs
 bindsym $mod+u exec --no-startup-id emacs
-bindsym $mod+Shift+u exec --no-startup-id termite -e "emacs -nw"
+# bindsym $mod+Shift+u exec --no-startup-id termite -e "emacs -nw"
+bindsym $mod+Shift+u exec --no-startup-id termite -e "vim"
 
 # monitor layout
 bindsym $mod+g exec --no-startup-id ~/.screenlayout/one-monitor.sh
