@@ -77,7 +77,6 @@ ${color2}$hr
 ${color2}file systems:
  /           $color${fs_used /}/${fs_size /} ${fs_bar 6 /} ${color2}
  /home       $color${fs_used /home}/${fs_size /home} ${fs_bar 6 /home} ${color2}
- Ubuntu      $color${fs_used /mnt/homedsk}/${fs_size /mnt/homedsk} ${fs_bar 6 /mnt/homedsk} ${color2}
  Windows     $color${fs_used /mnt/DE56FA2156F9F9DB}/${fs_size /mnt/DE56FA2156F9F9DB} ${fs_bar 6 /mnt/DE56FA2156F9F9DB} ${color2}
  /tmp        $color${fs_used /tmp}/${fs_size /tmp} ${fs_bar 6 /tmp}
 ${color2}$hr
