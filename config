@@ -61,7 +61,7 @@ bindsym $mod+Shift+q kill
 # installed.
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -b'
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='dmenu -i -b'
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -i -dmenu -font "snap 12" -bg "#222222" -fg "#888888" -hlbg "#285577" -hlfg "#ffffff" -opacity 90 -m 0 -location 0'
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -i -dmenu -font "snap 12" -bg "#820507" -fg "#190405" -hlbg "#a4180d" -hlfg "#d6a00c" -opacity 90 -m 0 -location 0'
 
 #disable title bars
     for_window [class="^.*"] border pixel 0
@@ -239,7 +239,7 @@ bindsym $mod+r mode "resize"
 bar {
         #status_command i3status
 	#status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	status_command bumblebee-status -m spotify sensors cpu memory nic traffic amixer battery datetime -p amixer.left-click="pavucontrol" nic.states=up nic.exclude=vmnet8,vmnet1,lo,docker0 traffic.states=up traffic.exclude=vmnet8,vmnet1,lo,docker0 datetime.format="%Y-%m-%d %H:%M:%S" -t iceberg
+	status_command bumblebee-status -m spotify sensors cpu memory publicip nic traffic amixer battery datetime -p amixer.left-click="pavucontrol" nic.states=up nic.exclude=vmnet8,vmnet1,lo,docker0 traffic.states=up traffic.exclude=vmnet8,vmnet1,lo,docker0 datetime.format="%Y-%m-%d %H:%M:%S" -t iceberg
 	# position down
 	# font pango:Inconsolate 8
 	font pango:Inconsolata 8, FontAwesome 8
