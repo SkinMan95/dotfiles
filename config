@@ -236,29 +236,33 @@ bindsym $mod+r mode "resize"
   client.urgent           $base02 $base08    $base00 $base02
   client.placeholder      $base02 $base08    $base00 $base02
 
-bar {
-        #status_command i3status
-	#status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	status_command bumblebee-status -m spotify sensors cpu memory publicip nic traffic amixer battery datetime -p amixer.left-click="pavucontrol" nic.states=up nic.exclude=vmnet8,vmnet1,lo,docker0 traffic.states=up traffic.exclude=vmnet8,vmnet1,lo,docker0 datetime.format="%Y-%m-%d %H:%M:%S" -t iceberg
-	# position down
-	# font pango:Inconsolate 8
-	font pango:Inconsolata 8, FontAwesome 8
-        strip_workspace_numbers no
-        #bindsym button4 nop
-        #bindsym button5 nop
-	tray_output primary
-        colors {
-              separator $base03
-              background $base01
-              statusline $base05
-#                        border  background text
-              focused_workspace  $base01 $base01    $base07
-              active_workspace   $base01 $base02    $base03
-              inactive_workspace $base01 $base01    $base03
-              urgent_workspace   $base01 $base01    $base08
-	}
-}
+# bar {
+#         #status_command i3status
+# 	#status_command i3blocks -c ~/.config/i3/i3blocks.conf
+# 	# status_command bumblebee-status -m spotify sensors cpu memory publicip nic traffic amixer battery datetime -p amixer.left-click="pavucontrol" nic.states=up nic.exclude=vmnet8,vmnet1,lo,docker0 traffic.states=up traffic.exclude=vmnet8,vmnet1,lo,docker0 datetime.format="%Y-%m-%d %H:%M:%S" -t iceberg
+# 	# position down
+# 	# font pango:Inconsolate 8
+# 	font pango:Inconsolata 8, FontAwesome 8
+#         strip_workspace_numbers no
+#         #bindsym button4 nop
+#         #bindsym button5 nop
+# 	tray_output primary
+#         colors {
+#               separator $base03
+#               background $base01
+#               statusline $base05
+# #                        border  background text
+#               focused_workspace  $base01 $base01    $base07
+#               active_workspace   $base01 $base02    $base03
+#               inactive_workspace $base01 $base01    $base03
+#               urgent_workspace   $base01 $base01    $base08
+# 	}
+# }
 
+# restart polybar
+bindsym $mod+Shift+n exec --no-startup-id ~/.config/i3/restart-polybar.sh
+
+# screenshot
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/Screenshots'
 
 # lock computer
@@ -310,6 +314,7 @@ bindsym $mod+Control+Shift+g exec --no-startup-id i3-msg move workspace to outpu
 
 
 #background apps
+exec_always --no-startup-id ~/.config/i3/restart-polybar.sh
 exec --no-startup-id betterlockscreen -u ~/.config/variety/Favorites
 
 exec --no-startup-id nm-applet
