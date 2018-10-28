@@ -130,42 +130,6 @@ set $workspace7 "7: "
 set $workspace8 "8: "
 set $workspace9 "9"
 set $workspace10 "10: "
-set $workspace11 "11"
-set $workspace12 "12"
-set $workspace13 "13"
-set $workspace14 "14"
-set $workspace15 "15"
-set $workspace16 "16"
-set $workspace17 "17"
-set $workspace18 "18"
-set $workspace19 "19"
-
-mode "extra-workspace" {
-     bindsym $mod+1 workspace $workspace11
-     bindsym $mod+2 workspace $workspace12
-     bindsym $mod+3 workspace $workspace13
-     bindsym $mod+4 workspace $workspace14
-     bindsym $mod+5 workspace $workspace15
-     bindsym $mod+6 workspace $workspace16
-     bindsym $mod+7 workspace $workspace17
-     bindsym $mod+8 workspace $workspace18
-     bindsym $mod+9 workspace $workspace19
-     bindsym $mod+0 workspace $workspace10
-
-     bindsym $mod+Shift+1 move container to workspace $workspace11
-     bindsym $mod+Shift+2 move container to workspace $workspace12
-     bindsym $mod+Shift+3 move container to workspace $workspace13
-     bindsym $mod+Shift+4 move container to workspace $workspace14
-     bindsym $mod+Shift+5 move container to workspace $workspace15
-     bindsym $mod+Shift+6 move container to workspace $workspace16
-     bindsym $mod+Shift+7 move container to workspace $workspace17
-     bindsym $mod+Shift+8 move container to workspace $workspace18
-     bindsym $mod+Shift+9 move container to workspace $workspace19
-     bindsym $mod+Shift+0 move container to workspace $workspace10
-
-     bindsym Return mode "default"
-     bindsym Escape mode "default"
-}
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -177,7 +141,7 @@ bindsym $mod+6 workspace $workspace6
 bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
-bindsym $mod+0 mode "extra-workspace"
+bindsym $mod+0 workspace $workspace10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -262,8 +226,9 @@ bindsym $mod+r mode "resize"
 # restart polybar
 bindsym $mod+Shift+n exec --no-startup-id ~/.config/i3/restart-polybar.sh
 
-# screenshot
+# screenshots
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/Screenshots'
+bindsym Control+Print exec --no-startup-id gnome-screenshot --interactive
 
 # lock computer
 bindsym $mod+Control+Shift+l exec --no-startup-id betterlockscreen -l dim
@@ -304,7 +269,6 @@ bindsym $mod+p exec --no-startup-id ~/.config/i3/spotify-control.sh next
 
 # emacs
 bindsym $mod+u exec --no-startup-id emacs
-# bindsym $mod+Shift+u exec --no-startup-id termite -e "emacs -nw"
 bindsym $mod+Shift+u exec --no-startup-id termite -e "vim"
 
 # monitor layout
@@ -313,9 +277,11 @@ bindsym $mod+Shift+g exec --no-startup-id ~/.screenlayout/two-monitor.sh
 bindsym $mod+Control+Shift+g exec --no-startup-id i3-msg move workspace to output left
 
 
-#background apps
+# background apps
 exec_always --no-startup-id ~/.config/i3/restart-polybar.sh
 exec --no-startup-id betterlockscreen -u ~/.config/variety/Favorites
+
+exec --no-startup-id xinput set-prop 17 304 1
 
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk -l 4.34:-74.4
@@ -326,12 +292,7 @@ exec --no-startup-id variety
 exec --no-startup-id dropbox
 # exec --no-startup-id /home/skinman95/.screenlayout/two-monitor.sh
 exec --no-startup-id sudo cpupower frequency-set -g powersave
-# exec --no-startup-id skype
 exec --no-startup-id spotify
-#exec --no-startup-id volumeicon 
-exec --no-startup-id amixer sset Master 20%
-# exec --no-startup-id qbittorrent
-exec --no-startup-id ~/.config/i3/battery_watch.sh
 exec --no-startup-id "devmon --no-gui"
 exec --no-startup-id dunst
 exec --no-startup-id compton --config ~/.config/compton.conf -b
@@ -339,20 +300,12 @@ exec --no-startup-id ~/.config/i3/touch-screen-disable.sh
 # exec --no-startup-id xautolock -locker ~/.config/i3/lock-screen.sh -detectsleep -time 15 -notify 15
 # exec --no-startup-id xset s off; xset -dpms
 exec --no-startup-id python2 ~/.config/i3/y50-subwoofer-linux-enabler/subwoofer.py
-# exec --no-startup-id sleep 15s; mailspring -b 2>&1 >/home/skinman95/Desktop/mailspring.err
 exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id rslsync
 
 for_window [class="Spotify"] move to workspace $workspace10
-assign [class = "Blockify"] $workspace10
-# for_window [title="Priority • Nozbe"] move to workspace $workspace9, floating enable, resize set 843 702, move absolute position 14 48
-# for_window [title="Inbox • Nozbe"] move to workspace $workspace9, floating enable, resize set 843 702, move absolute position 14 48
-for_window [class="Alarm-clock-applet"] floating enable, resize set 492 399, move absolute position 220 181
-assign [class="google-chrome"] $workspace1
-assign [class="Transmission-gtk"] $workspace8
-assign [class="qBittorrent"] $workspace8
-assign [class="Skype"] $workspace7
 assign [class="Franz"] $workspace2
+assign [class="qBittorrent"] $workspace8
 
 for_window [class="URxvt"] border pixel 2
 for_window [class="Termite"] border pixel 2
