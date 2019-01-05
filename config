@@ -281,7 +281,7 @@ bindsym $mod+Control+Shift+g exec --no-startup-id i3-msg move workspace to outpu
 exec_always --no-startup-id ~/.config/i3/restart-polybar.sh
 exec --no-startup-id betterlockscreen -u ~/.config/variety/Favorites
 
-exec --no-startup-id xinput set-prop 17 304 1
+exec --no-startup-id xinput set-prop 17 310 1
 
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk -l 4.34:-74.4
@@ -301,7 +301,7 @@ exec --no-startup-id ~/.config/i3/touch-screen-disable.sh
 # exec --no-startup-id xset s off; xset -dpms
 exec --no-startup-id python2 ~/.config/i3/y50-subwoofer-linux-enabler/subwoofer.py
 exec --no-startup-id kdeconnect-indicator
-exec --no-startup-id rslsync
+# exec --no-startup-id rslsync
 
 for_window [class="Spotify"] move to workspace $workspace10
 assign [class="Franz"] $workspace2
